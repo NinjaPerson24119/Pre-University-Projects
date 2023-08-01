@@ -9,7 +9,7 @@ Some languages I spent time learning included
 
 I also developed some stuff in GameMaker, but I don't think I have the files for those anymore.
 
-# Motivation
+## Motivation
 
 It's been a really long time and I wanted to see what files I still had, and go down memory lane.
 
@@ -17,7 +17,7 @@ To have a catalog of games I've been writing since I was 10 years old is really 
 
 Some of it is downright embarassing :) but I love having it around anyway.
 
-# Brief Timeline
+## Brief Timeline
 - <2010 - GameMaker
 - 2010-2011 DarkBasic (classic)
 - 2013-2015 C++
@@ -47,6 +47,6 @@ Generally these are some subset of:
 - ILU.dll
 - ILUT.dll 
 
-# Controls
+## Controls
 
 May not work since some of these programs used questionable scan codes for mapping keys.
