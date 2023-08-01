@@ -18,10 +18,10 @@ To have a catalog of games I've been writing since I was 10 years old is really 
 Some of it is downright embarassing :) but I love having it around anyway.
 
 # Brief Timeline
-<2010 - GameMaker
-2010-2011 DarkBasic (classic)
-2013-2015 C++
-2014-2017 C# (only wrote a few projects here)
+- <2010 - GameMaker
+- 2010-2011 DarkBasic (classic)
+- 2013-2015 C++
+- 2014-2017 C# (only wrote a few projects here)
 
 ## Running on wine
 ```
