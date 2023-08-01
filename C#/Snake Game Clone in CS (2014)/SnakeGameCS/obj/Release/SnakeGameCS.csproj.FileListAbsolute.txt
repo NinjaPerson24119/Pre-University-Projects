@@ -1,0 +1,6 @@
+C:\Users\Spruce Valley Farms\Documents\Visual Studio 2013\Projects\SnakeGameCS\SnakeGameCS\bin\Release\SnakeGameCS.exe.config
+C:\Users\Spruce Valley Farms\Documents\Visual Studio 2013\Projects\SnakeGameCS\SnakeGameCS\bin\Release\SnakeGameCS.exe
+C:\Users\Spruce Valley Farms\Documents\Visual Studio 2013\Projects\SnakeGameCS\SnakeGameCS\bin\Release\SnakeGameCS.pdb
+C:\Users\Spruce Valley Farms\Documents\Visual Studio 2013\Projects\SnakeGameCS\SnakeGameCS\obj\Release\SnakeGameCS.csprojResolveAssemblyReference.cache
+C:\Users\Spruce Valley Farms\Documents\Visual Studio 2013\Projects\SnakeGameCS\SnakeGameCS\obj\Release\SnakeGameCS.exe
+C:\Users\Spruce Valley Farms\Documents\Visual Studio 2013\Projects\SnakeGameCS\SnakeGameCS\obj\Release\SnakeGameCS.pdb

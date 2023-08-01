@@ -1,0 +1,6 @@
+/mnt/nicholas/HDD/Programming/Projects/C#/SnakeGameCS/SnakeGameCS/obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/mnt/nicholas/HDD/Programming/Projects/C#/SnakeGameCS/SnakeGameCS/bin/Debug/SnakeGameCS.exe.config
+/mnt/nicholas/HDD/Programming/Projects/C#/SnakeGameCS/SnakeGameCS/bin/Debug/SnakeGameCS.exe.mdb
+/mnt/nicholas/HDD/Programming/Projects/C#/SnakeGameCS/SnakeGameCS/bin/Debug/SnakeGameCS.exe
+/mnt/nicholas/HDD/Programming/Projects/C#/SnakeGameCS/SnakeGameCS/obj/Debug/SnakeGameCS.exe
+/mnt/nicholas/HDD/Programming/Projects/C#/SnakeGameCS/SnakeGameCS/obj/Debug/SnakeGameCS.exe.mdb

@@ -1,0 +1,15 @@
+C:\Users\nwengel4371\AppData\Local\Temporary Projects\SpaceInvaders\bin\Debug\SpaceInvaders.exe
+C:\Users\nwengel4371\AppData\Local\Temporary Projects\SpaceInvaders\bin\Debug\SpaceInvaders.pdb
+C:\Users\nwengel4371\AppData\Local\Temporary Projects\SpaceInvaders\obj\x86\Debug\SpaceInvaders.Form1.resources
+C:\Users\nwengel4371\AppData\Local\Temporary Projects\SpaceInvaders\obj\x86\Debug\SpaceInvaders.Properties.Resources.resources
+C:\Users\nwengel4371\AppData\Local\Temporary Projects\SpaceInvaders\obj\x86\Debug\SpaceInvaders.csproj.GenerateResource.Cache
+C:\Users\nwengel4371\AppData\Local\Temporary Projects\SpaceInvaders\obj\x86\Debug\SpaceInvaders.exe
+C:\Users\nwengel4371\AppData\Local\Temporary Projects\SpaceInvaders\obj\x86\Debug\SpaceInvaders.pdb
+H:\Documents\Visual Studio 2010\Projects\SpaceInvaders\SpaceInvaders\obj\x86\Debug\SpaceInvaders.exe
+H:\Documents\Visual Studio 2010\Projects\SpaceInvaders\SpaceInvaders\obj\x86\Debug\SpaceInvaders.pdb
+H:\Documents\Visual Studio 2010\Projects\SpaceInvaders\SpaceInvaders\bin\Debug\SpaceInvaders.exe
+H:\Documents\Visual Studio 2010\Projects\SpaceInvaders\SpaceInvaders\bin\Debug\SpaceInvaders.pdb
+H:\Documents\Visual Studio 2010\Projects\SpaceInvaders\SpaceInvaders\obj\x86\Debug\SpaceInvaders.Properties.Resources.resources
+H:\Documents\Visual Studio 2010\Projects\SpaceInvaders\SpaceInvaders\obj\x86\Debug\SpaceInvaders.csproj.GenerateResource.Cache
+H:\Documents\Visual Studio 2010\Projects\SpaceInvaders\SpaceInvaders\obj\x86\Debug\SpaceInvaders.csprojResolveAssemblyReference.cache
+H:\Documents\Visual Studio 2010\Projects\SpaceInvaders\SpaceInvaders\obj\x86\Debug\SpaceInvaders.Form1.resources

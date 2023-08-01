@@ -1,0 +1,7 @@
+H:\Documents\Visual Studio 2010\Projects\SpaceInvaders\SpaceInvaders\bin\Release\SpaceInvaders.exe
+H:\Documents\Visual Studio 2010\Projects\SpaceInvaders\SpaceInvaders\bin\Release\SpaceInvaders.pdb
+H:\Documents\Visual Studio 2010\Projects\SpaceInvaders\SpaceInvaders\obj\x86\Release\SpaceInvaders.Form1.resources
+H:\Documents\Visual Studio 2010\Projects\SpaceInvaders\SpaceInvaders\obj\x86\Release\SpaceInvaders.Properties.Resources.resources
+H:\Documents\Visual Studio 2010\Projects\SpaceInvaders\SpaceInvaders\obj\x86\Release\SpaceInvaders.csproj.GenerateResource.Cache
+H:\Documents\Visual Studio 2010\Projects\SpaceInvaders\SpaceInvaders\obj\x86\Release\SpaceInvaders.exe
+H:\Documents\Visual Studio 2010\Projects\SpaceInvaders\SpaceInvaders\obj\x86\Release\SpaceInvaders.pdb
