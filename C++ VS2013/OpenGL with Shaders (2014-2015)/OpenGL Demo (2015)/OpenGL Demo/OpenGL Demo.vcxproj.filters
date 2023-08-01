@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Custom\IO\File.cpp">
+      <Filter>Custom\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="Custom\OpenGL\Shader.cpp">
+      <Filter>Custom\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="Custom\OpenGL\ShaderProgram.cpp">
+      <Filter>Custom\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="Custom\OpenGL\Mesh.cpp">
+      <Filter>Custom\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="Custom\OpenGL\Texture.cpp">
+      <Filter>Custom\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="Custom\OpenGL\Animation.cpp">
+      <Filter>Custom\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="Custom\OpenGL\TextureClip.cpp">
+      <Filter>Custom\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="Custom\OpenGL\World.cpp">
+      <Filter>Custom\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="Custom\OpenGL\Camera.cpp">
+      <Filter>Custom\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="Custom\OpenGL\TriangleGroup.cpp">
+      <Filter>Custom\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="Custom\OpenGL\Vertex.cpp">
+      <Filter>Custom\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="Custom\OpenGL\Model.cpp">
+      <Filter>Custom\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="Custom\Assets\ResourceManager.cpp">
+      <Filter>Custom\Assets</Filter>
+    </ClCompile>
+    <ClCompile Include="Custom\Assets\Guid.cpp">
+      <Filter>Custom\Assets</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Custom">
+      <UniqueIdentifier>{990fc85b-54f5-4e22-a78e-b70a58843c38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Custom\IO">
+      <UniqueIdentifier>{70f49daf-c386-4a37-8539-ebfe1952249b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Custom\OpenGL">
+      <UniqueIdentifier>{4d26ee1b-d8c8-4198-b218-3c74abf9b2bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Custom\Assets">
+      <UniqueIdentifier>{dd349d74-5f22-4faf-8192-b3c5fc88c7d2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Custom\IO\File.h">
+      <Filter>Custom\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="Custom\OpenGL\Shader.h">
+      <Filter>Custom\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="Custom\OpenGL\ShaderProgram.h">
+      <Filter>Custom\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="Custom\OpenGL\Mesh.h">
+      <Filter>Custom\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="Custom\OpenGL\Texture.h">
+      <Filter>Custom\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="Custom\OpenGL\Animation.h">
+      <Filter>Custom\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="Custom\OpenGL\Material.h">
+      <Filter>Custom\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="Custom\OpenGL\TextureClip.h">
+      <Filter>Custom\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="Custom\OpenGL\World.h">
+      <Filter>Custom\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="Custom\OpenGL\Camera.h">
+      <Filter>Custom\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="Custom\OpenGL\TriangleGroup.h">
+      <Filter>Custom\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="Custom\OpenGL\Vertex.h">
+      <Filter>Custom\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="Custom\OpenGL\OpenGL.h">
+      <Filter>Custom\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="Custom\OpenGL\Model.h">
+      <Filter>Custom\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="Custom\Assets\ResourceManager.h">
+      <Filter>Custom\Assets</Filter>
+    </ClInclude>
+    <ClInclude Include="Custom\Assets\Guid.h">
+      <Filter>Custom\Assets</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="shader.frag" />
+    <None Include="shader.vert" />
+  </ItemGroup>
+</Project>

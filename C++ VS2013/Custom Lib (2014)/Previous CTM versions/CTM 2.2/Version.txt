@@ -1,0 +1,73 @@
+////
+Version 1.0 - January 2014 and earlier
+-Base
+	-Added "Color"
+	-Added "Point"
+	-Added "Rectangle"
+	-Added "Extras"
+-Drawing
+	-Added "Texture" (OpenGL 2.0)
+	-Added "Primitives 2D" (OpenGL 2.0)
+-Input and output
+	-Added "Keyboard"
+	-Added "Mouse"
+-Physics
+	-Added "Collisions"
+////
+
+////
+Version 2.0 - March 2014
+-Added "All.h" as an inclusion method
+-Custom Lib now uses the namespace (ctm::)
+-Modified all code to use primitives defined in "Types"
+-Fixed file layout. Declaration and definitions are now in separate files
+-The default debug log must be specified for most errors to be handled
+-Base
+	-Multiple fixes
+	-Added "Types" to base
+	-Added "Debug Log" to base
+	-Added debug mode "CUSTOMLIB_DEBUG_FATAL"
+	-Added debug mode "CUSTOMLIB_DEBUG_FAST"
+	-Added debug mode "CUSTOMLIB_DEBUG_SLOW"
+-Data
+	-Added "Stack Allocator"
+	-Added "Pool Allocator"
+	-Added "Heap Allocator"
+	-Added "Vector1D"
+	-Added "Vector2D"
+	-Added "List"
+	-Added "String"
+-Graphics
+	-Multiple fixes
+	-Updated "Texture" (Now uses buffers)
+	-Added "Texture Sheet"
+	-Added "Animation"
+////
+
+////
+Version 2.1 - June 2014
+Added "Dlls" folder for easy setup of external libraries
+Added quick include files for "DevIL", "FreeType", and "OpenGL"
+-Base
+	-Removed "Angles"
+-Input and output 
+	-Merged "Keyboard" and "Mouse" into "KeyboardAndMouse"
+	-Added "File"
+-Data
+	-Removed "Guid Allocator"
+////
+
+////
+Version 2.2 - July
+Renamed "Drawing" to "Graphics"
+Added "External" folder with all third party libraries
+Added "OpenAL" as a third party library
+Moved "Dlls" into "External" and renamed it "Binaries"
+-Base
+	-Added "Ready Check"
+-Data
+	-Added "Shared Pointer"
+	-Added "Unshared Pointer"
+	-Added "Allocator"
+	-Added "Basic Allocator"
+////

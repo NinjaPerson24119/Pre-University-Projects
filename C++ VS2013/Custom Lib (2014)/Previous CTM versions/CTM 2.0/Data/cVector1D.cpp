@@ -1,0 +1,3 @@
+#include "cVector1D.h"
+
+UINT32 DEFAULT_VECTOR_ALLOWANCE = 20;

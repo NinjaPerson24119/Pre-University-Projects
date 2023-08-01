@@ -1,0 +1,44 @@
+////
+Version 1.0 - January 2014 and earlier
+-Base
+	-Added "Color"
+	-Added "Point"
+	-Added "Rectangle"
+	-Added "Extras"
+-Drawing
+	-Added "Texture" (OpenGL 2.0)
+	-Added "Primitives 2D" (OpenGL 2.0)
+-Input and output
+	-Added "Keyboard"
+	-Added "Mouse"
+-Physics
+	-Added "Colissions"
+////
+
+////
+Version 2.0 - March 2014
+-Added "All.h" as an inclusion method
+-Fixed file layout. Declaration and definitions are now in seperate files
+-Renamed "Drawing" to "Graphics"
+-Base
+	-Multiple fixes
+	-Added "Types" to base
+	-Added "Debug Log" to base
+	-Added debug mode "CUSTOMLIB_DEBUG_FATAL"
+	-Added debug mode "CUSTOMLIB_DEBUG_FAST"
+	-Added debug mode "CUSTOMLIB_DEBUG_SLOW"
+-Data
+	-Added "Stack Allocator"
+	-Added "Pool Allocator"
+	-Added "Heap Allocator"
+	-Added "Vector1D"
+	-Added "Vector2D"
+	-Added "List"
+	-Added "String"
+-Drawing
+	-Multiple fixes
+	-Updated "Texture" (OpenGL 3.0)
+	-Added "Texture Sheet"
+	-Added "Animation"
+	-Added "Font" (FreeType 2)
+////

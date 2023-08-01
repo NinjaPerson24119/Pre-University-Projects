@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="StackAllocator.cpp">
+      <Filter>Custom</Filter>
+    </ClCompile>
+    <ClCompile Include="Walls.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Snake.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Goal.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Color.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Controller.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Point.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Random.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Timeline.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Vertex.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphicsAssist.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics.cpp">
+      <Filter>OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="File.cpp">
+      <Filter>Custom</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="StackAllocator.h">
+      <Filter>Custom</Filter>
+    </ClInclude>
+    <ClInclude Include="Walls.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Snake.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Goal.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Color.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Controller.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Point.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Random.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Timeline.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Allocator.h">
+      <Filter>Custom</Filter>
+    </ClInclude>
+    <ClInclude Include="pstdint.h">
+      <Filter>Custom</Filter>
+    </ClInclude>
+    <ClInclude Include="Vertex.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicsAssist.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics.h">
+      <Filter>OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="File.h">
+      <Filter>Custom</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="shader.vert">
+      <Filter>OpenGL</Filter>
+    </None>
+    <None Include="shader.frag">
+      <Filter>OpenGL</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Custom">
+      <UniqueIdentifier>{6b2beb15-f12f-4b72-ae42-099df9254f49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game">
+      <UniqueIdentifier>{49c69d79-4bd1-4597-b10c-36828d2ee750}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Base">
+      <UniqueIdentifier>{79654d3f-a076-442f-88b8-20dd331e08ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OpenGL">
+      <UniqueIdentifier>{0037d24d-796c-4148-afa1-67fb79952430}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
