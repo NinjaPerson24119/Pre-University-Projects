@@ -1,0 +1,2349 @@
+Rem * Title  : A Special Mission....
+Rem * Author : Nicholas Wengel
+Rem * Date   : June 6 2010
+`---------------------------------------------
+`A special mission...
+`By Nicholas Wengel
+`---------------------------------------------
+
+hide mouse
+load image "yellowb.bmp",3
+load image "redb.bmp",4
+load image "purpleb.bmp",5
+load image "orangeb.bmp",6
+load image "greenb.bmp",7
+load image "grayb.bmp",8
+load image "blueb.bmp",9
+load image "bronzeb.bmp",11
+load image "brownb.bmp",12
+load image "blackb.bmp",13
+load image "darkblueb.bmp",14
+load image "darkgreenb.bmp",15
+load image "darkpurpleb.bmp",16
+load image "annoyedb1.bmp",17
+load image "annoyedb2.bmp",18
+load image "annoyedb3.bmp",19
+load image "annoyedb4.bmp",20
+load image "annoyedb5.bmp",21
+load image "annoyedb6.bmp",22
+load image "annoyedb7.bmp",23
+load image "annoyedb8.bmp",24
+load image "annoyedb9.bmp",25
+load image "annoyedb10.bmp",26
+load image "annoyedb11.bmp",27
+load image "finalb.bmp",28
+load image "super1.bmp",35
+load image "super2.bmp",36
+load image "super3.bmp",37
+load image "super4.bmp",38
+disable escapekey
+hide mouse
+barnacles=0
+`Make start titles
+print "ARE YOU READY."
+wait key
+print "ARE YOU SHURE..."
+wait key
+print "ARE YOU REALLY SHURE..."
+wait key
+print "YOUR SCARED ARN'T YOU..."
+wait key
+print "WAAAWAAAWAA WHERES MY MOMMY!!!!!!!!!!"
+wait key
+print "HAHAHA!THATS YOU!!!!!!!!!!"
+wait key
+print "YOU SUPER SURE YOU WANT TO SEE THIS...IT'S RATED R..."
+wait key
+print "IF YOU THINK YOU HAVE WHAT IT TAKES TO SEE THIS HORROR..."
+wait key
+print "THEN PRESS THE BUTTON..."
+wait key
+print "BUT HE'S A LITTLE RED!"
+wait 3000
+LOAD IMAGE "bigbb.bmp",1
+load image "cheesebun.bmp",29
+load image "hammer.bmp",30
+load image "needleclicked.bmp",33
+load image "needle.bmp",2
+load image "hammerclicked.bmp",31
+load image "cheesebunclicked.bmp",32
+load image "save!!!.bmp",34
+sprite 1,200,200,1
+blazez=1
+do
+`Start of weapon switcher
+if blazez=3 then sprite 2,mousex(),mousey(),29
+if blazez=2 then sprite 2,mousex(),mousey(),30
+wait 10
+if blazez=1 then sprite 2,mousex(),mousey(),2
+if blazez=4 then blazez=blazez-3
+if blazez=0 then blazez=blazez+1
+wait 10
+if mouseclick()=1 then gosub concentrate1
+if upkey()=1 then blazez=blazez+1
+wait 10
+if downkey()=1 then blazez=blazez-1
+`end of weapon switcher
+if mouseclick()=1 then goto MENOPS
+if mouseclick()=2 then goto MENOPS
+if mouseclick()=4 then goto MENOPS
+if mouseclick()=8 then goto MENOPS
+loop
+`Create start screen
+MENOPS:
+cls
+hide sprite 1
+load bitmap "titlestart.bmp"
+wait key
+do
+`Start of weapon switcher
+if blazez=3 then sprite 2,mousex(),mousey(),29
+if blazez=2 then sprite 2,mousex(),mousey(),30
+wait 10
+if blazez=1 then sprite 2,mousex(),mousey(),2
+if blazez=4 then blazez=blazez-3
+if blazez=0 then blazez=blazez+1
+wait 10
+if upkey()=1 then blazez=blazez+1
+wait 10
+if downkey()=1 then blazez=blazez-1
+`end of weapon switcher
+if mouseclick()=1 then goto special
+loop
+`Create mainmenu
+special:
+CLS
+q1=0
+if sprite exist(1)=1 then delete sprite 1
+if sprite exist(2)=1 then delete sprite 2
+e1=0
+e2=0
+e3=0
+e4=0
+e5=0
+e6=0
+e7=0
+e8=0
+e9=0
+e10=0
+e11=0
+e12=0
+e13=0
+e14=0
+e15=0
+e16=0
+e17=0
+e18=0
+e19=0
+e20=0
+e21=0
+e22=0
+e23=0
+e24=0
+e25=0
+e26=0
+e27$="0"
+e28=0
+print "A-MISSION 1"
+print "B-MISSION 2"
+print "C-MISSION 3"
+print "D-MISSION 4"
+print "E-MISSION 5"
+print "F-MISSION 6"
+print "G-MISSION 7"
+print "H-MISSION 8"
+print "I-MISSION 9"
+print "J-MISSION 10"
+print "K-MISSION 11"
+print "L-MISSION 12"
+print "M-MISSION 13"
+print "N-MISSION 14"
+print "O-MISSION 15"
+print "P-MISSION 16"
+print "Q-MISSION 17"
+print "R-MISSION 18"
+print "S-MISSION 19"
+print "T-MISSION 20"
+print "U-MISSION 21"
+print "V-MISSION 22"
+print "W-MISSION 23"
+print "X-MISSION 24"
+print "Y-MISSION 25"
+print "Z-FINAL MISSION"
+print "1-HELP"
+print "2-EXIT"
+set cursor 120,100
+Print "PRESS THE CORESPONDING KEY OF WHAT YOU WISH TO DO."
+set cursor 200,120
+print "Codes:MISSION 1=1 HELP=qwerty EXIT=3"
+C1=0
+C2=496278
+C3=265387
+C4=387549
+C5=246798
+C6=546975
+C7=127964
+C8=127643
+C9=179534
+C10=897643
+C11=721943
+C12=849621
+C13=973465
+C14=278946
+C15=249735
+C16=146823
+C17=645823
+C18=001208
+C19=016782
+C20=468246
+C21=512197
+C22=179231
+C23=013216
+C24=219579
+C25=000064
+C26=645600
+C27=0
+C28=0
+shell:
+do
+set cursor 200,300
+if keystate(30)=1 then input e1
+set text size 10
+if keystate(48)=1 then input e2
+if keystate(46)=1 then input e3
+if keystate(32)=1 then input e4
+if keystate(18)=1 then input e5
+if keystate(33)=1 then input e6
+if keystate(34)=1 then input e7
+if keystate(35)=1 then input e8
+if keystate(23)=1 then input e9
+if keystate(36)=1 then input e10
+if keystate(37)=1 then input e11
+if keystate(38)=1 then input e12
+if keystate(50)=1 then input e13
+if keystate(49)=1 then input e14
+if keystate(24)=1 then input e15
+if keystate(25)=1 then input e16
+if keystate(16)=1 then input e17
+if keystate(19)=1 then input e18
+if keystate(31)=1 then input e19
+if keystate(20)=1 then input e20
+if keystate(22)=1 then input e21
+if keystate(47)=1 then input e22
+if keystate(17)=1 then input e23
+if keystate(45)=1 then input e24
+if keystate(21)=1 then input e25
+if keystate(44)=1 then input e26
+if keystate(2)=1 then input e27$
+if keystate(3)=1 then input e28
+if e1=1 then goto game1
+if e2=496278 then goto game2
+if e3=265387 then goto game3
+if e4=387549 then goto game4
+if e5=246798 then goto game5
+if e6=546975 then goto game6
+if e7=127964 then goto game7
+if e8=127643 then goto game8
+if e9=179534 then goto game9
+if e10=897643 then goto game10
+if e11=721943 then goto game11
+if e12=849621 then goto game12
+if e13=973465 then goto game13
+if e14=278946 then goto game14
+if e15=249735 then goto game15
+if e16=146823 then goto game16
+if e17=604582 then goto game17
+if e18=001208 then goto game18
+if e19=016782 then goto game19
+if e20=468246 then goto game20
+if e21=512197 then goto game21
+if e22=179231 then goto game22
+if e23=013216 then goto game23
+if e24=219579 then goto game24
+if e25=000064 then goto game25
+if e26=645600 then goto game26
+if e27$="qwerty" then goto game27
+if e28=3 then goto game28
+if e27$="Type_this_word_at_the_help" then goto bane1
+if e27$="Piano" then goto bane2
+if e27$="Key" then goto bane3
+if e27$="Hi" then goto bane4
+if e27$="RaBbIt" then goto bane1
+if e1=25 then goto pictures
+if e1=50 then goto pictures
+loop
+`PUT BUTTON GAMES HERE
+`MAKE MISSION 1
+game1:
+ms=1
+cls
+print "press escape to return to mainmenu"
+sprite 3,230,150,3
+show sprite 3
+do
+`Start of weapon switcher
+if blazez=3 then sprite 2,mousex(),mousey(),29
+if blazez=2 then sprite 2,mousex(),mousey(),30
+wait 10
+if blazez=1 then sprite 2,mousex(),mousey(),2
+if mouseclick()=1 then gosub concentrate1
+if blazez=4 then blazez=blazez-3
+if blazez=0 then blazez=blazez+1
+wait 10
+if upkey()=1 then blazez=blazez+1
+wait 10
+if downkey()=1 then blazez=blazez-1
+if escapekey()=1
+hide sprite 2
+hide sprite 3
+cls
+goto special
+endif
+`end of weapon switcher
+loop
+
+
+`MAKE MISSION 2
+game2:
+ms=2
+cls
+print "press escape to return to mainmenu"
+sprite 3,230,150,4
+show sprite 3
+do
+`Start of weapon switcher
+if blazez=3 then sprite 2,mousex(),mousey(),29
+if blazez=2 then sprite 2,mousex(),mousey(),30
+wait 10
+if blazez=1 then sprite 2,mousex(),mousey(),2
+if mouseclick()=1 then gosub concentrate1
+if blazez=4 then blazez=blazez-3
+if blazez=0 then blazez=blazez+1
+wait 10
+if upkey()=1 then blazez=blazez+1
+wait 10
+if downkey()=1 then blazez=blazez-1
+if escapekey()=1
+hide sprite 2
+hide sprite 3
+cls
+goto special
+endif
+`end of weapon switcher
+loop
+
+
+game3:
+ms=3
+cls
+print "press escape to return to mainmenu"
+sprite 3,230,150,5
+show sprite 3
+do
+`Start of weapon switcher
+if blazez=3 then sprite 2,mousex(),mousey(),29
+if blazez=2 then sprite 2,mousex(),mousey(),30
+wait 10
+if blazez=1 then sprite 2,mousex(),mousey(),2
+if mouseclick()=1 then gosub concentrate1
+if blazez=4 then blazez=blazez-3
+if blazez=0 then blazez=blazez+1
+wait 10
+if upkey()=1 then blazez=blazez+1
+wait 10
+if downkey()=1 then blazez=blazez-1
+if escapekey()=1
+hide sprite 2
+hide sprite 3
+cls
+goto special
+endif
+`end of weapon switcher
+loop
+game4:
+ms=4
+cls
+print "press escape to return to mainmenu"
+sprite 3,230,150,6
+show sprite 3
+do
+`Start of weapon switcher
+if blazez=3 then sprite 2,mousex(),mousey(),29
+if blazez=2 then sprite 2,mousex(),mousey(),30
+wait 10
+if blazez=1 then sprite 2,mousex(),mousey(),2
+if mouseclick()=1 then gosub concentrate1
+if blazez=4 then blazez=blazez-3
+if blazez=0 then blazez=blazez+1
+wait 10
+if upkey()=1 then blazez=blazez+1
+wait 10
+if downkey()=1 then blazez=blazez-1
+if escapekey()=1
+hide sprite 2
+hide sprite 3
+cls
+goto special
+endif
+`end of weapon switcher
+loop
+game5:
+ms=5
+cls
+print "press escape to return to mainmenu"
+sprite 3,230,150,6
+show sprite 3
+do
+`Start of weapon switcher
+if blazez=3 then sprite 2,mousex(),mousey(),29
+if blazez=2 then sprite 2,mousex(),mousey(),30
+wait 10
+if blazez=1 then sprite 2,mousex(),mousey(),2
+if mouseclick()=1 then gosub concentrate1
+if blazez=4 then blazez=blazez-3
+if blazez=0 then blazez=blazez+1
+wait 10
+if upkey()=1 then blazez=blazez+1
+wait 10
+if downkey()=1 then blazez=blazez-1
+if escapekey()=1
+hide sprite 2
+hide sprite 3
+cls
+goto special
+endif
+`end of weapon switcher
+loop
+game6:
+ms=6
+cls
+print "press escape to return to mainmenu"
+sprite 3,230,150,7
+show sprite 3
+do
+`Start of weapon switcher
+if blazez=3 then sprite 2,mousex(),mousey(),29
+if blazez=2 then sprite 2,mousex(),mousey(),30
+wait 10
+if blazez=1 then sprite 2,mousex(),mousey(),2
+if mouseclick()=1 then gosub concentrate1
+if blazez=4 then blazez=blazez-3
+if blazez=0 then blazez=blazez+1
+wait 10
+if upkey()=1 then blazez=blazez+1
+wait 10
+if downkey()=1 then blazez=blazez-1
+if escapekey()=1
+hide sprite 2
+hide sprite 3
+cls
+goto special
+endif
+`end of weapon switcher
+loop
+game7:
+ms=7
+cls
+print "press escape to return to mainmenu"
+sprite 3,230,150,8
+show sprite 3
+do
+`Start of weapon switcher
+if blazez=3 then sprite 2,mousex(),mousey(),29
+if blazez=2 then sprite 2,mousex(),mousey(),30
+wait 10
+if blazez=1 then sprite 2,mousex(),mousey(),2
+if mouseclick()=1 then gosub concentrate1
+if blazez=4 then blazez=blazez-3
+if blazez=0 then blazez=blazez+1
+wait 10
+if upkey()=1 then blazez=blazez+1
+wait 10
+if downkey()=1 then blazez=blazez-1
+if escapekey()=1
+hide sprite 2
+hide sprite 3
+cls
+goto special
+endif
+`end of weapon switcher
+loop
+game8:
+ms=8
+cls
+print "press escape to return to mainmenu"
+sprite 3,230,150,9
+show sprite 3
+do
+`Start of weapon switcher
+if blazez=3 then sprite 2,mousex(),mousey(),29
+if blazez=2 then sprite 2,mousex(),mousey(),30
+wait 10
+if blazez=1 then sprite 2,mousex(),mousey(),2
+if mouseclick()=1 then gosub concentrate1
+if blazez=4 then blazez=blazez-3
+if blazez=0 then blazez=blazez+1
+wait 10
+if upkey()=1 then blazez=blazez+1
+wait 10
+if downkey()=1 then blazez=blazez-1
+if escapekey()=1
+hide sprite 2
+hide sprite 3
+cls
+goto special
+endif
+`end of weapon switcher
+loop
+game9:
+ms=9
+cls
+print "press escape to return to mainmenu"
+sprite 3,230,150,10
+show sprite 3
+do
+`Start of weapon switcher
+if blazez=3 then sprite 2,mousex(),mousey(),29
+if blazez=2 then sprite 2,mousex(),mousey(),30
+wait 10
+if blazez=1 then sprite 2,mousex(),mousey(),2
+if mouseclick()=1 then gosub concentrate1
+if blazez=4 then blazez=blazez-3
+if blazez=0 then blazez=blazez+1
+wait 10
+if upkey()=1 then blazez=blazez+1
+wait 10
+if downkey()=1 then blazez=blazez-1
+if escapekey()=1
+hide sprite 2
+hide sprite 3
+cls
+goto special
+endif
+`end of weapon switcher
+loop
+game10:
+ms=10
+cls
+print "press escape to return to mainmenu"
+sprite 3,230,150,11
+show sprite 3
+do
+`Start of weapon switcher
+if blazez=3 then sprite 2,mousex(),mousey(),29
+if blazez=2 then sprite 2,mousex(),mousey(),30
+wait 10
+if blazez=1 then sprite 2,mousex(),mousey(),2
+if mouseclick()=1 then gosub concentrate1
+if blazez=4 then blazez=blazez-3
+if blazez=0 then blazez=blazez+1
+wait 10
+if upkey()=1 then blazez=blazez+1
+wait 10
+if downkey()=1 then blazez=blazez-1
+if escapekey()=1
+hide sprite 2
+hide sprite 3
+cls
+goto special
+endif
+`end of weapon switcher
+loop
+game11:
+ms=11
+cls
+print "press escape to return to mainmenu"
+sprite 3,230,150,12
+show sprite 3
+do
+`Start of weapon switcher
+if blazez=3 then sprite 2,mousex(),mousey(),29
+if blazez=2 then sprite 2,mousex(),mousey(),30
+wait 10
+if blazez=1 then sprite 2,mousex(),mousey(),2
+if mouseclick()=1 then gosub concentrate1
+if blazez=4 then blazez=blazez-3
+if blazez=0 then blazez=blazez+1
+wait 10
+if upkey()=1 then blazez=blazez+1
+wait 10
+if downkey()=1 then blazez=blazez-1
+if escapekey()=1
+hide sprite 2
+hide sprite 3
+cls
+goto special
+endif
+`end of weapon switcher
+loop
+game12:
+ms=12
+cls
+print "press escape to return to mainmenu"
+sprite 3,230,150,13
+show sprite 3
+do
+`Start of weapon switcher
+if blazez=3 then sprite 2,mousex(),mousey(),29
+if blazez=2 then sprite 2,mousex(),mousey(),30
+wait 10
+if blazez=1 then sprite 2,mousex(),mousey(),2
+if mouseclick()=1 then gosub concentrate1
+if blazez=4 then blazez=blazez-3
+if blazez=0 then blazez=blazez+1
+wait 10
+if upkey()=1 then blazez=blazez+1
+wait 10
+if downkey()=1 then blazez=blazez-1
+if escapekey()=1
+hide sprite 2
+hide sprite 3
+cls
+goto special
+endif
+`end of weapon switcher
+loop
+game13:
+ms=13
+cls
+print "press escape to return to mainmenu"
+sprite 3,230,150,14
+show sprite 3
+do
+`Start of weapon switcher
+if blazez=3 then sprite 2,mousex(),mousey(),29
+if blazez=2 then sprite 2,mousex(),mousey(),30
+wait 10
+if blazez=1 then sprite 2,mousex(),mousey(),2
+if mouseclick()=1 then gosub concentrate1
+if blazez=4 then blazez=blazez-3
+if blazez=0 then blazez=blazez+1
+wait 10
+if upkey()=1 then blazez=blazez+1
+wait 10
+if downkey()=1 then blazez=blazez-1
+if escapekey()=1
+hide sprite 2
+hide sprite 3
+cls
+goto special
+endif
+`end of weapon switcher
+loop
+game14:
+ms=14
+cls
+print "press escape to return to mainmenu"
+sprite 3,230,150,15
+show sprite 3
+do
+`Start of weapon switcher
+if blazez=3 then sprite 2,mousex(),mousey(),29
+if blazez=2 then sprite 2,mousex(),mousey(),30
+wait 10
+if blazez=1 then sprite 2,mousex(),mousey(),2
+if mouseclick()=1 then gosub concentrate1
+if blazez=4 then blazez=blazez-3
+if blazez=0 then blazez=blazez+1
+wait 10
+if upkey()=1 then blazez=blazez+1
+wait 10
+if downkey()=1 then blazez=blazez-1
+if escapekey()=1
+hide sprite 2
+hide sprite 3
+cls
+goto special
+endif
+`end of weapon switcher
+loop
+game15:
+ms=15
+cls
+print "press escape to return to mainmenu"
+sprite 3,230,150,16
+show sprite 3
+do
+`Start of weapon switcher
+if blazez=3 then sprite 2,mousex(),mousey(),29
+if blazez=2 then sprite 2,mousex(),mousey(),30
+wait 10
+if blazez=1 then sprite 2,mousex(),mousey(),2
+if mouseclick()=1 then gosub concentrate1
+if blazez=4 then blazez=blazez-3
+if blazez=0 then blazez=blazez+1
+wait 10
+if upkey()=1 then blazez=blazez+1
+wait 10
+if downkey()=1 then blazez=blazez-1
+if escapekey()=1
+hide sprite 2
+hide sprite 3
+cls
+goto special
+endif
+`end of weapon switcher
+loop
+
+game16:
+ms=16
+cls
+print "press escape to return to mainmenu"
+sprite 3,230,150,17
+show sprite 3
+do
+`Start of weapon switcher
+if blazez=3 then sprite 2,mousex(),mousey(),29
+if blazez=2 then sprite 2,mousex(),mousey(),30
+wait 10
+if blazez=1 then sprite 2,mousex(),mousey(),2
+if mouseclick()=1 then gosub concentrate1
+if blazez=4 then blazez=blazez-3
+if blazez=0 then blazez=blazez+1
+wait 10
+if upkey()=1 then blazez=blazez+1
+wait 10
+if downkey()=1 then blazez=blazez-1
+if escapekey()=1
+hide sprite 2
+hide sprite 3
+cls
+goto special
+endif
+`end of weapon switcher
+loop
+game17:
+ms=17
+cls
+print "press escape to return to mainmenu"
+sprite 3,230,150,18
+show sprite 3
+do
+`Start of weapon switcher
+if blazez=3 then sprite 2,mousex(),mousey(),29
+if blazez=2 then sprite 2,mousex(),mousey(),30
+wait 10
+if blazez=1 then sprite 2,mousex(),mousey(),2
+if mouseclick()=1 then gosub concentrate1
+if blazez=4 then blazez=blazez-3
+if blazez=0 then blazez=blazez+1
+wait 10
+if upkey()=1 then blazez=blazez+1
+wait 10
+if downkey()=1 then blazez=blazez-1
+if escapekey()=1
+hide sprite 2
+hide sprite 3
+cls
+goto special
+endif
+`end of weapon switcher
+loop
+game18:
+ms=18
+cls
+print "press escape to return to mainmenu"
+sprite 3,230,150,19
+show sprite 3
+do
+`Start of weapon switcher
+if blazez=3 then sprite 2,mousex(),mousey(),29
+if blazez=2 then sprite 2,mousex(),mousey(),30
+wait 10
+if blazez=1 then sprite 2,mousex(),mousey(),2
+if mouseclick()=1 then gosub concentrate1
+if blazez=4 then blazez=blazez-3
+if blazez=0 then blazez=blazez+1
+wait 10
+if upkey()=1 then blazez=blazez+1
+wait 10
+if downkey()=1 then blazez=blazez-1
+if escapekey()=1
+hide sprite 2
+hide sprite 3
+cls
+goto special
+endif
+`end of weapon switcher
+loop
+game19:
+ms=19
+cls
+print "press escape to return to mainmenu"
+sprite 3,230,150,20
+show sprite 3
+do
+`Start of weapon switcher
+if blazez=3 then sprite 2,mousex(),mousey(),29
+if blazez=2 then sprite 2,mousex(),mousey(),30
+wait 10
+if blazez=1 then sprite 2,mousex(),mousey(),2
+if mouseclick()=1 then gosub concentrate1
+if blazez=4 then blazez=blazez-3
+if blazez=0 then blazez=blazez+1
+wait 10
+if upkey()=1 then blazez=blazez+1
+wait 10
+if downkey()=1 then blazez=blazez-1
+if escapekey()=1
+hide sprite 2
+hide sprite 3
+cls
+goto special
+endif
+`end of weapon switcher
+loop
+game20:
+ms=20
+cls
+print "press escape to return to mainmenu"
+sprite 3,230,150,21
+show sprite 3
+do
+`Start of weapon switcher
+if blazez=3 then sprite 2,mousex(),mousey(),29
+if blazez=2 then sprite 2,mousex(),mousey(),30
+wait 10
+if blazez=1 then sprite 2,mousex(),mousey(),2
+if mouseclick()=1 then gosub concentrate1
+if blazez=4 then blazez=blazez-3
+if blazez=0 then blazez=blazez+1
+wait 10
+if upkey()=1 then blazez=blazez+1
+wait 10
+if downkey()=1 then blazez=blazez-1
+if escapekey()=1
+hide sprite 2
+hide sprite 3
+cls
+goto special
+endif
+`end of weapon switcher
+loop
+game21:
+ms=21
+cls
+print "press escape to return to mainmenu"
+sprite 3,230,150,22
+show sprite 3
+do
+`Start of weapon switcher
+if blazez=3 then sprite 2,mousex(),mousey(),29
+if blazez=2 then sprite 2,mousex(),mousey(),30
+wait 10
+if blazez=1 then sprite 2,mousex(),mousey(),2
+if mouseclick()=1 then gosub concentrate1
+if blazez=4 then blazez=blazez-3
+if blazez=0 then blazez=blazez+1
+wait 10
+if upkey()=1 then blazez=blazez+1
+wait 10
+if downkey()=1 then blazez=blazez-1
+if escapekey()=1
+hide sprite 2
+hide sprite 3
+cls
+goto special
+endif
+`end of weapon switcher
+loop
+game22:
+ms=22
+cls
+print "press escape to return to mainmenu"
+sprite 3,230,150,24
+show sprite 3
+do
+`Start of weapon switcher
+if blazez=3 then sprite 2,mousex(),mousey(),29
+if blazez=2 then sprite 2,mousex(),mousey(),30
+wait 10
+if blazez=1 then sprite 2,mousex(),mousey(),2
+if mouseclick()=1 then gosub concentrate1
+if blazez=4 then blazez=blazez-3
+if blazez=0 then blazez=blazez+1
+wait 10
+if upkey()=1 then blazez=blazez+1
+wait 10
+if downkey()=1 then blazez=blazez-1
+if escapekey()=1
+hide sprite 2
+hide sprite 3
+cls
+goto special
+endif
+`end of weapon switcher
+loop
+game23:
+ms=23
+cls
+print "press escape to return to mainmenu"
+sprite 3,230,150,24
+show sprite 3
+do
+`Start of weapon switcher
+if blazez=3 then sprite 2,mousex(),mousey(),29
+if blazez=2 then sprite 2,mousex(),mousey(),30
+wait 10
+if blazez=1 then sprite 2,mousex(),mousey(),2
+if mouseclick()=1 then gosub concentrate1
+if blazez=4 then blazez=blazez-3
+if blazez=0 then blazez=blazez+1
+wait 10
+if upkey()=1 then blazez=blazez+1
+wait 10
+if downkey()=1 then blazez=blazez-1
+if escapekey()=1
+hide sprite 2
+hide sprite 3
+cls
+goto special
+endif
+`end of weapon switcher
+loop
+game24:
+ms=24
+cls
+print "press escape to return to mainmenu"
+sprite 3,230,150,25
+show sprite 3
+do
+`Start of weapon switcher
+if blazez=3 then sprite 2,mousex(),mousey(),29
+if blazez=2 then sprite 2,mousex(),mousey(),30
+wait 10
+if blazez=1 then sprite 2,mousex(),mousey(),2
+if mouseclick()=1 then gosub concentrate1
+if blazez=4 then blazez=blazez-3
+if blazez=0 then blazez=blazez+1
+wait 10
+if upkey()=1 then blazez=blazez+1
+wait 10
+if downkey()=1 then blazez=blazez-1
+if escapekey()=1
+hide sprite 2
+hide sprite 3
+cls
+goto special
+endif
+`end of weapon switcher
+loop
+game25:
+ms=25
+cls
+print "press escape to return to mainmenu"
+sprite 3,230,150,26
+show sprite 3
+do
+`Start of weapon switcher
+if blazez=3 then sprite 2,mousex(),mousey(),29
+if blazez=2 then sprite 2,mousex(),mousey(),30
+wait 10
+if blazez=1 then sprite 2,mousex(),mousey(),2
+if mouseclick()=1 then gosub concentrate1
+if blazez=4 then blazez=blazez-3
+if blazez=0 then blazez=blazez+1
+wait 10
+if upkey()=1 then blazez=blazez+1
+wait 10
+if downkey()=1 then blazez=blazez-1
+if escapekey()=1
+hide sprite 2
+hide sprite 3
+cls
+goto special
+endif
+`end of weapon switcher
+loop
+game26:
+ms=26
+cls
+print "press escape to return to mainmenu"
+sprite 3,230,150,27
+show sprite 3
+do
+`Start of weapon switcher
+if blazez=3 then sprite 2,mousex(),mousey(),29
+if blazez=2 then sprite 2,mousex(),mousey(),30
+wait 10
+if blazez=1 then sprite 2,mousex(),mousey(),2
+if mouseclick()=1 then gosub concentrate1
+if blazez=4 then blazez=blazez-3
+if blazez=0 then blazez=blazez+1
+wait 10
+if upkey()=1 then blazez=blazez+1
+wait 10
+if downkey()=1 then blazez=blazez-1
+if escapekey()=1
+hide sprite 2
+hide sprite 3
+cls
+goto special
+endif
+`end of weapon switcher
+loop
+game27:
+directory$=""
+filename$="readme.txt"
+commandline$=filename$
+execute file "C:\Windows\NOTEPAD.EXE",commandline$,directory$,1
+e1=0
+e2=0
+e3=0
+e4=0
+e5=0
+e6=0
+e7=0
+e8=0
+e9=0
+e10=0
+e11=0
+e12=0
+e13=0
+e14=0
+e15=0
+e16=0
+e17=0
+e18=0
+e19=0
+e20=0
+e21=0
+e22=0
+e23=0
+e24=0
+e25=0
+e26=0
+e27=0
+e28=0
+e29=0
+goto shell
+game28:
+END
+goto shell
+wait key
+concentrate1:
+if blazez=1 then sprite 2,mousex(),mousey(),33
+if blazez=2 then sprite 2,mousex(),mousey(),31
+if blazez=3 then sprite 2,mousex(),mousey(),32
+q1=q1+1
+cls
+if q1=52 then goto COMPLETEIDIOT
+if q1=51 then sprite 3,230,150,34
+if q1=50 then center text 300,300,b50$
+if q1=49 then center text 300,300,b49$
+if q1=48 then center text 300,300,b48$
+if q1=47 then center text 300,300,b47$
+if q1=46 then center text 300,300,b46$
+if q1=45 then center text 300,300,b45$
+if q1=44 then center text 300,300,b44$
+if q1=43 then center text 300,300,b43$
+if q1=42 then center text 300,300,b42$
+if q1=41 then center text 300,300,b41$
+if q1=40 then center text 300,300,b40$
+if q1=39 then center text 300,300,b39$
+if q1=38 then center text 300,300,b38$
+if q1=37 then center text 300,300,b37$
+if q1=36 then center text 300,300,b36$
+if q1=35 then center text 300,300,b35$
+if q1=34 then center text 300,300,b34$
+if q1=33 then center text 300,300,b33$
+if q1=32 then center text 300,300,b32$
+if q1=31 then center text 300,300,b31$
+if q1=30 then center text 300,300,b30$
+if q1=29 then center text 300,300,b29$
+if q1=28 then center text 300,300,b28$
+if q1=27 then center text 300,300,b27$
+if q1=26 then center text 300,300,b26$
+if q1=25 then center text 300,300,b25$
+if q1=24 then center text 300,300,b24$
+if q1=23 then center text 300,300,b23$
+if q1=22 then center text 300,300,b22$
+if q1=21 then center text 300,300,b21$
+if q1=20 then center text 300,300,b20$
+if q1=19 then center text 300,300,b19$
+if q1=18 then center text 300,300,b18$
+if q1=17 then center text 300,300,b17$
+if q1=16 then center text 300,300,b16$
+if q1=15 then center text 300,300,b15$
+if q1=14 then center text 300,300,b14$
+if q1=13 then center text 300,300,b13$
+if q1=12 then center text 300,300,b12$
+if q1=11 then center text 300,300,b11$
+if q1=10 then center text 300,300,b10$
+if q1=9 then center text 300,300,b9$
+if q1=8 then center text 300,300,b8$
+if q1=7 then center text 300,300,b7$
+if q1=6 then center text 300,300,b6$
+if q1=5 then center text 300,300,b5$
+if q1=4 then center text 300,300,b4$
+if q1=3 then center text 300,300,b3$
+if q1=2 then center text 300,300,b2$
+if q1=1 then center text 300,300,b1$
+gosub bubble
+return
+`MAKE IMPORTANT BUTTON SPEECH
+bspeech:
+b1$="That hurts."
+b2$="D'u."	
+b3$="Hey get out of the way."
+b4$="Move it or loose it."
+b5$="Jeez if you d'ont stop im going to go wild on you..."
+b6$="Okay...Im going to be late for work..."
+b7$="OWW!!!!!!"
+b8$="I don't need to go to the hospital if you quit!"
+b9$="Im going to be fired..."
+b10$="Give me a second I need to get a restraining order!"
+b11$="Ohhh your loosing it I think..."
+b12$="Okay a needles quick pain..."
+b13$="A hammer's hurts alot..."
+b14$="And a cheesebun...what's wrong with you!!!!"
+b15$="Okay tip #1 get lost..."
+b16$="Will you quit it!"
+b17$="I think you just broke my back!"
+b18$="Quit stocking me!"
+b19$="Okay then!"
+b20$="OWW!!!"
+b21$="PRESS ENTER!!No click me..."
+b22$="Press control-alt-delete twice!"
+b23$="You meany!"
+b24$="I've got a great job..."
+b25$="I get 20$ an hour...OWWWWWWWWWWWWWWWWIIIIEEEEEEEEEEEWWWWWWWEE!"
+b26$="And I like my job..."
+b27$="So don't get me fired!!!!!!."
+b28$="Okay where's the o button again and the w button..."
+b29$="I need to spell something..."
+b30$="OWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW!"
+b31$="I will report you!"
+b32$="Back off!"
+b33$="Shoot were's my tazzer..."
+b34$="I know karate!!!"
+b35$="WAAAAAAAAWAAAAAAAAAAWAAAAAAAAAA quit it!!!!!"
+b36$="I hate you"
+b37$="I'll take that back if you quit being mean!"
+b38$="SOMEONE SAVE MY LIFE!!"
+b39$="You got me..."
+b40$="Fine if you leave me alone I will give you something!"
+b41$="I take that as a NO!"
+b42$="(OMG)"
+b43$="STOP IT"
+b44$="HERE QUIT IT AND I CAN GRAB MY PAPER!"
+b45$="OWW! Can't you see im doing something!"
+b46$="OKAY..."
+b47$="HERE TAKE THIS THEN LEAVE ME ALONE!"
+b48$="TAKE IT!!!!!!!!!"
+b49$="TAKE IT ALREADY!"
+b50$="It says code=496278  passletter=T"
+return
+COMPLETEIDIOT:
+hide sprite 3
+hide sprite 2
+cls
+goto special
+
+bubble:
+if ms=1 then goto bspeech:
+if ms=2 then goto concentrate2
+if ms=3 then goto concentrate3
+if ms=4 then goto concentrate4
+if ms=5 then goto concentrate5
+if ms=6 then goto concentrate6
+if ms=7 then goto concentrate7
+if ms=8 then goto concentrate8
+if ms=9 then goto concentrate9
+if ms=10 then goto concentrate10
+if ms=11 then goto concentrate11
+if ms=12 then goto concentrate12
+if ms=13 then goto concentrate13
+if ms=14 then goto concentrate14
+if ms=15 then goto concentrate15
+if ms=16 then goto concentrate16
+if ms=17 then goto concentrate17
+if ms=18 then goto concentrate18
+if ms=19 then goto concentrate19
+if ms=20 then goto concentrate20
+if ms=21 then goto concentrate21
+if ms=22 then goto concentrate22
+if ms=23 then goto concentrate23
+if ms=24 then goto concentrate24
+if ms=25 then goto concentrate25
+if ms=26 then goto concentrate26
+if ms=27 then goto concentrate27
+if ms=28 then goto concentrate28
+if ms=29 then goto concentrate29
+if ms=30 then goto concentrate30
+if ms=31 then goto concentrate31
+ms=ms-1
+return
+goto special:
+concentrate2:
+b1$="Hey. HAve I met u before??"
+b2$="You look fimiliar."
+b3$="No?"
+b4$="Hey look! SPORK!"
+b5$="Are you fimiliar with that? Know SPORK??" 
+b6$="Quit. I'll Let you become fimiliar with a spork."
+b7$="Hey look! BLENDER!"
+b8$="I hate u with a passion."
+b9$="LEt me reword that.HI."
+b10$="PLEASE STOP!"
+b11$="HOw would u feel if...."
+b12$="YOU WERE BEING HIT WITH INADEMIT OBJECTS??!"
+b13$="You, sir, are evil."
+b14$="If u hit me again the world will blow up"
+b15$="OHHH ur lucky. NExt time you hit me ur dead."
+b16$="BOOOM! Hahaha Deadface. BOOMDEAD>.< "
+b17$="Not so tough now are ya?!"
+b18$="I WILL EAT UR CHEESEBUN"
+b19$="Meow."
+b20$="THats ur fault."
+b21$="Woof" 
+b22$="THat too is ur fault."
+b23$="BRING IT ON"
+b24$="OH. U DID"
+b25$="Code for next mission=265387 passletter=y"
+return
+bane1:
+cls
+hide all sprites
+print "Here are some awesome button bonuses!"
+print "Choose the style of button game you wish to play!"
+print "Press escape to return."
+print "To get here quicker just type RaBbIt in the correct letter size!"
+print "-----------------------------------------------------------------"
+print "1-HORROR"
+print "2-HAPPY GO LUCKY"
+print "3-STICK MEN"
+print "4-VEGETABLES"
+print "5-VOLCANIC"
+do
+if keystate(2)=1 then goto bb1
+if keystate(3)=1 then goto bb2
+if keystate(4)=1 then goto bb3
+if keystate(5)=1 then goto bb4
+if keystate(6)=1 then goto bb5
+if escapekey()=1 then goto special
+loop
+bane2:
+cls
+hide all sprites
+print "I hope you realize that many bonuses do not exist..."
+print "password=Key in that letter case..."
+print "press escape to return..."
+do
+if escapekey()=1 then goto special
+loop
+bane3:
+cls
+hide all sprites
+print "TAKE THIS!!!!!!!!!"
+print "Press escape to return."
+print "-----------------------"
+print "1-Level Maker"
+print "2-Joke Book"
+do
+if keystate(2)=1 then goto LEVEL
+if keystate(3)=1 then goto JOKE
+if escapekey()=1 then goto special
+loop
+bane4:
+hide all sprites
+cls
+print "If you want more awesomeness then goto www.2d-3d-gaming.com"
+print "Press anykey to return..."
+wait key
+goto special
+cls
+hide all sprites
+concentrate3:
+b1$="Hi my fellow scientist!"
+b2$="Hey quit hitting me!!"
+b3$="Have any food?"
+b4$="Well thats rude!"
+b5$="If you hit me with that hammer of yours..."
+b6$="I assure you your head will meet the ground!" 
+b7$="See you later!"
+b8$="ACK!"
+b9$="LOST CONSCIousNESS!"
+b10$="5 hits later..."
+b11$="DUDE!"
+b12$="OWWEE"
+b13$="no more deal."
+b14$="you are a good and painful actor..."
+b15$="but you ack..."
+b16$="are to"
+b17$="VIcsIOUS!"
+b18$="BANG!"
+b19$="THATS YOURE ANSWER?"
+b20$="Bang!"
+b21$="Quit wacking me!"
+b22$="bang!"
+b23$="Hey you knocked my hat off!"
+b24$="My hat say's something..."
+b25$="Code to next level=387549  passletter=p"
+return
+concentrate4:
+b1$="I AM A BUTTON!"
+b2$="nothin special or anything..."
+b3$="owch."
+b4$="no need to hurt me..."
+b5$="im a simple steel button..."
+b6$="you arn't buying it??"
+b7$="HUH!"
+b8$="ha well take a look at my awesome jacket brand..."
+b9$="it is called..."
+b10$="um..."
+b11$="you know what i forget***"
+b12$="but i now their phone number..."
+b13$="i think?"
+b14$="it is..."
+b15$="um"
+b16$="yeah!"
+b17$="maybe if you quit hitting me i can remember..."
+b18$="what was i saying..."
+b19$="oh yeah it's 911 i think...maybe."
+b20$="Short term memory... i wonder why..."
+b21$="have i been eating to many cheese buns..."
+b22$="no that was grapes..."
+b23$="You know what? You can call me the..."
+b24$="big stupid button...with a a a..."
+b25$=" Code for next mission:246798    passletter:p "
+return
+concentrate5:
+b1$=" I am a grape a very moldy grape..."
+b2$="i am green..."
+b3$="i am not destined to see MR.garbage"
+b4$="do not eat me."
+b5$="im yukky."
+b6$="so do not eat me"
+b7$="i am a big green moldy grape!"
+b8$="i take that back!"
+b9$="ouchiwouchi!"
+b10$="spazzo!"
+b11$="i need a hole puncher..."
+b12$="yes a very big hole puncher..."
+b13$="to poke your screws in..."
+b14$="cause you got a few screws loose..."
+b15$="no joke."
+b16$="i am smart cause can insult people..."
+b17$="oww..."
+b18$="you are obssesed with cheese buns!"
+b19$="i am not"
+b20$="hey look at me im smart!"
+b21$="and guess what!"
+b22$="my brain cells are specially marked!"
+b23$="crap you knocked one out!"
+b24$="can you read it... it says............"
+b25$=" Code for next mission:546975    passletter:e"
+return
+concentrate6:
+b1$="im very special!"
+b2$="cause im the alphabet!"
+b3$="Q"
+b4$="W"
+b5$="E"
+b6$="R"
+b7$="T"
+b8$="Y"
+b9$="U"
+b10$="I"
+b11$="O"
+b12$="P"
+b13$="A"
+b14$="S"
+b15$="D"
+b16$="F"
+b17$="G"
+b18$="H"
+b19$="J"
+b20$="K"
+b21$="L"
+b22$="Z...X...C...V...B...N...M"
+b23$="IT SPELLS!"
+b24$="A SENTENCE! to stupid to know...so sad..."
+b25$=" Code for next mission:12798    passletter:_"
+return
+concentrate7:
+b1$="im awesome im the alphabet!"
+b2$="wait that is used..."
+b3$="Im the numbers!"
+b4$="1"
+b5$="2"
+b6$="3"
+b7$="4"
+b8$="5"
+b9$="6"
+b10$="7"
+b11$="8"
+b12$="9"
+b13$="10"
+b14$="11"
+b15$="12"
+b16$="13"
+b17$="14"
+b18$="15"
+b19$="16"
+b20$="17"
+b21$="18"
+b22$="well thats some nombers"
+b23$="it spells something magical!"
+b24$="to bad i can't read..."
+b25$=" Code for next mission:127643    passletter:t"
+return
+concentrate8:
+b1$="Im the numberpad numbers!"
+b2$="someone already stole bad no good numbers!"
+b3$="1"
+b4$="2"
+b5$="3"
+b6$="4"
+b7$="5"
+b8$="6"
+b9$="7"
+b10$="8"
+b11$="9"
+b12$="0"
+b13$="+"
+b14$="-"
+b15$="*"
+b16$="/"
+b17$="."
+b18$="well thats them all and"
+b19$="0"
+b20$="1"
+b21$="2"
+b22$="3"
+b23$="5"
+b24$="here we go!"
+b25$=" Code for next mission:179534    passletter:i"
+return
+concentrate9:
+b1$="i have how many brain cells!"
+b2$="let's count em!"
+b3$="1"
+b4$="2"
+b5$="3"
+b6$="4"
+b7$="5"
+b8$="6"
+b9$="7"
+b10$="8"
+b11$="9"
+b12$="10"
+b13$="11"
+b14$="12"
+b15$="13"
+b16$="14"
+b17$="15"
+b18$="16"
+b19$="17"
+b20$="18"
+b21$="19"
+b22$="20"
+b23$="ouch thats not much..."
+b24$="fine heres the pass..."
+b25$=" Code for next mission:897643    passletter:s"
+return
+concentrate10:
+b1$="im button 1+0=10"
+b2$="and i ain't lazy!"
+b3$="those dudes got awey by saying symbols"
+b4$="i talk"
+b5$="see"
+b6$="yeehaw!"
+b7$="im a cowboy"
+b8$="and tell me are you stupid or smart!"
+b9$="click me with a hammer if your smart"
+b10$="click me with a cheesebun if your stupid"
+b11$="click me with needle if you don't know what you are..."
+b12$="the thing is your stupid to hit me in the first place"
+b13$="you learn't ya manners yet?"
+b14$="hey have you seen cloudy with a chance of meatballs?"
+b15$="if you have heres what i think of it..."
+b16$="it's a great movie but it makes you hungry..."
+b17$="very hungry"
+b18$="now if you hit me with that cheesebun now im going..."
+b19$="to eat it because im watching..."
+b20$="cloudy with a chance of meatballs"
+b21$="and im out of popcorn..."
+b22$="but hey that hurts"
+b23$="and im going to knock a message into you..."
+b24$="yah!and it's spellt..."
+b25$=" Code for next mission:721943    passletter:_"
+return
+concentrate11:
+b1$="these are symbols..."
+b2$="the are round..."
+b3$="always round"
+b4$="also here are examples"
+b5$="["
+b6$="]"
+b7$=";"
+b8$="'"
+b9$=","
+b10$="."
+b11$="/"
+b12$="`"
+b13$="q"
+b14$="1"
+b15$="."
+b16$="+"
+b17$="-"
+b18$="these are symbols"
+b19$="want icecream?"
+b20$="sorry!"
+b21$="call me"
+b22$="then you will get ice cream"
+b23$="with chocolate frosting..."
+b24$="that says something important to me"
+b25$=" Code for next mission:849621    passletter:w"
+return
+concentrate12:
+b1$="You want to exercise..."
+b2$="well here are exercises"
+b3$="jumpinjakks"
+b4$="arm rolling"
+b5$="eating"
+b6$="movies"
+b7$="video games"
+b8$="rubber!"
+b9$="flubber"
+b10$="cd's"
+b11$="music"
+b12$="couches"
+b13$="potatoes"
+b14$="lasagna!"
+b15$="computers in general"
+b16$="not skool"
+b17$="paper"
+b18$="towels"
+b19$="balloons"
+b20$="football"
+b21$="soccer"
+b22$="karate"
+b23$="and many more"
+b24$="heres the extra..."
+b25$=" Code for next mission:973465    passletter:o"
+return
+concentrate13:
+b1$="YO!"
+b2$="MY!"
+b3$="NAME!"
+b4$="IS!"
+b5$="JOE!"
+b6$="I AM AWESOME"
+b7$="AND YOU ARE TOO!"
+b8$="I AM SMART AND YOU ARE TOO"
+b9$="BECAUSE IM A SMARTIE AND YOU ARE NOT!"
+b10$="YIPPI TOO BABLE BAM!"
+b11$="YIPPI TOO BABLE BAM!"
+b12$="CAUSE IM A SMARTIE!"
+b13$="AND IM SWEET ON THE INSIDE BUT"
+b14$="WHEN IM MAD YOU SHALL FEEL MY WRAF"
+b15$="KABBOOM"
+b16$="THE WORLD EXPLODED!"
+b17$="AND YOU DID TOO"
+b18$="ALONG WITH ME!"
+b19$="BUT I STILL SING BECAUSE I SURVIVED!"
+b20$="AND I AM AWESOME!"
+b21$="AND YOU ARE TOO"
+b22$="THE WORLD'S ASTEROIDS SPELLT..."
+b23$="SOMETHING!!"
+b24$="IT READ..."
+b25$=" Code for next mission:278946    passletter:r"
+return
+concentrate14:
+b1$="these days i walk around..."
+b2$="it's year 2012"
+b3$="every day if i got the chance"
+b4$="i watch 2012 the movie when the world ends"
+b5$="in 2010..."
+b6$="people were frightened"
+b7$="but now are relieved"
+b8$="but guess what?"
+b9$="im filled with laughter!!"
+b10$="hahaha!"
+b11$="and im going to eat a cheesebun!"
+b12$="hahaha!"
+b13$="you know the readme of this game?"
+b14$="it's all a joke in the section labeled"
+b15$="hahaha!"
+b16$="no why?"
+b17$="it doesn't exist"
+b18$="hahaha!"
+b19$="boy i need to watch lego starwars that game rules!"
+b20$="i miss the old video game systems"
+b21$="they were great but these ones are great too!"
+b22$="i can almost feel something..."
+b23$="it's..."
+b24$="it's the feeling of..."
+b25$=" Code for next mission:249735    passletter:d"
+return
+concentrate15:
+b1$="hey! let me tell you somethings!"
+b2$="bob bingle baber123!"
+b3$="bob bingle baber123!"
+b4$="bob bingle baber123!"
+b5$="bob bingle baber123!"
+b6$="bob bingle baber123!"
+b7$="bob bingle baber123!"
+b8$="bob bingle baber123!"
+b9$="bob bingle baber123!"
+b10$="bob bingle baber123!"
+b11$="bob bingle baber123!"
+b12$="bob bingle baber123!"
+b13$="bob bingle baber123!"
+b14$="bob bingle baber123!"
+b15$="bob bingle baber123!"
+b16$="bob bingle baber123!"
+b17$="bob bingle baber123!"
+b18$="bob bingle baber123!"
+b19$="bob bingle baber123!"
+b20$="bob bingle baber123!"
+b21$="bob bingle baber123!"
+b22$="bob bingle baber123!"
+b23$="bob bingle baber123!"
+b24$="bob bingle baber123!"
+b25$=" Code for next mission:146823    passletter:_"
+return
+concentrate16:
+b1$="im annoyed!"
+b2$="you are mean! and that's why this..."
+b3$="conversation is filled with..."
+b4$="bingle bobber frobber!" 
+b5$="bingle bobber frobber!" 
+b6$="bingle bobber frobber!" 
+b7$="bingle bobber frobber!" 
+b8$="bingle bobber frobber!" 
+b9$="bingle bobber frobber!" 
+b10$="bingle bobber frobber!" 
+b11$="bingle bobber frobber!" 
+b12$="bingle bobber frobber!" 
+b13$="bingle bobber frobber!" 
+b14$="bingle bobber frobber!" 
+b15$="bingle bobber frobber!" 
+b16$="bingle bobber frobber!" 
+b17$="bingle bobber frobber!" 
+b18$="bingle bobber frobber!" 
+b19$="bingle bobber frobber!" 
+b20$="bingle bobber frobber!" 
+b21$="bingle bobber frobber!" 
+b22$="bingle bobber frobber!" 
+b23$="bingle bobber frobber!" 
+b24$="bingle bobber frobber!" 
+b25$=" Code for next mission:604582    passletter:a"
+return
+concentrate17:
+b1$="here is a list of thing's you are"
+b2$="don't worry if this hurts you..."
+b3$="theres something to cheer you up at the end"
+b4$="you suck!"
+b5$="you have few brains"
+b6$="youre awesome"
+b7$="you have a cheesebun!"
+b8$="you have a hammer!"
+b9$="you have a needle!"
+b10$="you suck!"
+b11$="you suck!"
+b12$="you suck!"
+b13$="you suck!"
+b14$="you suck!"
+b15$="you suck!"
+b16$="you suck!"
+b17$="you suck!"
+b18$="you suck!"
+b19$="you suck!"
+b20$="you suck!"
+b21$="you suck!"
+b22$="you suck!"
+b23$="you suck!"
+b24$="remember it's opposite day!"
+b25$=" Code for next mission:001208    passletter:t"
+return
+concentrate18:
+b1$="HEY!"
+b2$="this is top secret!"
+b3$="my boss will beat me if he..."
+b4$="gulp,knew this conversation existed"
+b5$="can you keep a SECRET?"
+b6$="okay well my BONUS pair of clothes is {25} letters long"
+b7$="my second BONUS pair of clothes is {5} letters long"
+b8$="my third BONUS pair of clothes is {3} letters long"
+b9$="my fourth BONUS pair of clothes is {2} letters long"
+b10$="i have no fifth BONUS pair of clothes."
+b11$="i have BONUS CONTENT ON THIS GAME im playing"
+b12$="i need to type some stupid CODE to get to the HELP" 
+b13$="did you know all the key words of this conversation..."
+b14$="are in capitals?"
+b15$="re-do this level exept only read stuff in capitals..."
+b16$="i probably should not say this but"
+b17$="this can HELP you get BONUS content!"
+b18$="good luck"
+b19$="im sorry but know i must act as a guard"
+b20$="go away!"
+b21$="go away!"
+b22$="go away!"
+b23$="go away!"
+b24$="go away!"
+b25$=" Code for next mission:016782    passletter:_"
+return
+concentrate19:
+b1$="the last button was fired!"
+b2$="so i act as guard only!"
+b3$="go away!"
+b4$="go away!"
+b5$="go away!"
+b6$="go away!"
+b7$="go away!"
+b8$="go away!"
+b9$="go away!"
+b10$="go away!"
+b11$="go away!"
+b12$="go away!"
+b13$="go away!"
+b14$="go away!"
+b15$="go away!"
+b16$="go away!"
+b17$="go away!"
+b18$="go away!"
+b19$="go away!"
+b20$="go away!"
+b21$="go away!"
+b22$="fine take this piece of paper..." 
+b23$="then go away!"
+b24$="the paper says..."
+b25$=" Code for next mission:468246    passletter:t"
+return
+concentrate20:
+b1$="you are in danger of boss!"
+b2$="leave!"
+b3$="please leave and get all the four bonus areas!"
+b4$="oups"
+b5$="you have a cheesebun"
+b6$="if you do give it to me"
+b7$="yum!thanks!"
+b8$="yum!thanks!"
+b9$="yum!thanks!"
+b10$="yum!thanks!"
+b11$="yum!thanks!"
+b12$="yum!thanks!"
+b13$="yum!thanks!"
+b14$="yum!thanks!"
+b15$="yum!thanks!"
+b16$="yum!thanks!"
+b17$="yum!thanks!"
+b18$="yum!thanks!"
+b19$="yum!thanks!"
+b20$="yum!thanks!"
+b21$="yum!thanks!"
+b22$="i shall hurt you if you don't leave!"
+b23$="move"
+b24$="take this then go!"
+b25$=" Code for next mission:512197    passletter:h"
+return
+concentrate21:
+b1$="Let's all sing a long and painfull song..."
+b2$="im a carrot!"
+b3$="and im really green to!"
+b4$="im a carrot!"
+b5$="and im really green to!"
+b6$="you can eat me in one bite but instead you choose!..."
+b7$="to hit me!"
+b8$="and it really really hurts!"
+b9$="o.m.g. it really hurts!"
+b10$="and at this very moment you hit once more!"
+b11$="im alive!"
+b12$="i have a life to you bully!"
+b13$="but you are really mean!"
+b14$="and now i take my breath..."
+b15$="and spit it out at you......"
+b16$="cause it's a log log log to town" 
+b17$="i like logs..."
+b18$="cause their really good defence!"
+b19$="but..."
+b20$="you smush them all to bits"
+b21$="because homework is paper and paper is logs..."
+b22$="and my back really hurts"
+b23$="but heres a message for you!"
+b24$="so you better get this through!"
+b25$=" Code for next mission:179231    passletter:e"
+return
+concentrate22:
+b1$="yo im a dj!"
+b2$="a a!"
+b3$="let's do something awesome!"
+b4$="im a smarty!"
+b5$="and im sweet on the inside!"
+b6$="but when you get on my bad side i really look green!"
+b7$="cause greens my favorite color and blue is second!"
+b8$="and no..."
+b9$="i am not moldy"
+b10$="im just a really really cool smarty!"
+b11$="but im round as you see!"
+b12$="really really big!"
+b13$="so im really juicy indeed!"
+b14$="so i will sit on your door steps andwait to be eaten!"
+b15$="like my song!"
+b16$="it's really d.j. ish!"
+b17$="so"
+b18$="in something seconds i have another song!"
+b19$="6"
+b20$="5"
+b21$="4"
+b22$="3"
+b23$="2"
+b24$="1"
+b25$=" Code for next mission:013216    passletter:_"
+return
+concentrate23:
+b1$="if you click me you shall die..."
+b2$="you don't hurt me like you just did"
+b3$="cause the world will explode along with you!"
+b4$="so do not click me or so meet the grimreaper!"
+b5$="but it's all ready to late!"
+b6$="you are destined to destroy the world"
+b7$="dudududududududud!"
+b8$="i am smart!"
+b9$="and within some thing seconds i will reveal what..."
+b10$="you are!"
+b11$="1"
+b12$="2"
+b13$="3"
+b14$="4"
+b15$="5"
+b16$="6"
+b17$="7"
+b18$="8"
+b19$="9"
+b20$="10"
+b21$="11"
+b22$="12"
+b23$="13"
+b24$="14"
+b25$=" Code for next mission:219579    passletter:h"
+return
+concentrate24:
+b1$="dude this is top secret!"
+b2$="don't spill it!"
+b3$="okay...if you can determine how many times..."
+b4$="the button on mission one speaks and type the..."
+b5$="answer where mission 6 code is supposed to go you..."
+b6$="will..."
+b7$="emergency alert!"
+b8$="nuclear bomb being released in 15 seconds!"
+b9$="15"
+b10$="14"
+b11$="13"
+b12$="12"
+b13$="11"
+b14$="10"
+b15$="9"
+b16$="8"
+b17$="7"
+b18$="6"
+b19$="5"
+b20$="4"
+b21$="3"
+b22$="2"
+b23$="1"
+b24$="boom!"
+b25$=" Code for next mission:000064    passletter:e"
+return
+concentrate25:
+b1$="want a teddy bear?"
+b2$="you do?"
+b3$="N.O."
+b4$="not.optional."
+b5$="have beans today"
+b6$="you must'eve"
+b7$="did you know that..."
+b8$="the big bang never happened..."
+b9$="ya thats right!"
+b10$="im the science dude..."
+b11$="if you hit me once more..."
+b12$="i swear you will be filled like a compact disk!"
+b13$="bam!"
+b14$="you mr.fly are no longer flying!"
+b15$="boom!"
+b16$="bAng"
+b17$="bom"
+b18$="bing"
+b19$="boing"
+b20$="bomb"
+b21$="boom"
+b22$="ching!"
+b23$="flat"
+b24$="tire that says..."
+b25$=" Code for next mission:645600    passletter:l"
+return
+concentrate26:
+b1$="you got this far..."
+b2$="but this is boss"
+b3$="so..."
+b4$="let's party"
+b5$="later..."
+b6$="ouch"
+b7$="sorry that hurts"
+b8$="pardon"
+b9$="quit it"
+b10$="okay if you want to play"
+b11$="you gonna play"
+b12$="so let's have a staring contest..."
+b13$="ready..."
+b14$="go!"
+b15$="hey you blinked"
+b16$="hey that hurt!"
+b17$="oops i think i loose..."
+b18$="here it is"
+b19$="the icecream cone with the ingraving"
+b20$="what icecream?"
+b21$="ouch"
+b22$="moma!"
+b23$="ack i dropped it!"
+b24$="well pick it up!!!"
+b25$="Congratulations you win!read the help!passletter:p"
+return
+`MAKE BONUSES
+concentrate27:
+b1$="IM BACK!"
+b2$="hahaha!"
+b3$="it the bigb.b.!"
+b4$="you know what that stands for!"
+b5$="it stands for the big bloody button!"
+b6$="hahaha!"
+b7$="meet the grimreaper!"
+b8$="my blade is big and you are big..."
+b9$="perfectly done in one little second..."
+b10$="you ready to die!"
+b11$="caUSE THE NEXT HIT EARNS YOU A TRIP TO the grave..."
+b12$="a really long trip!!!"
+b13$="wich cemetery is your preference?"
+b14$="the big ones..."
+b15$="the small ones..."
+b16$="the medium sized ones..."
+b17$="or my backyard!!"
+b18$="joking!!"
+b19$="all i need is a coffing!"
+b21$="and no burying!!!"
+b22$="so what size are you..."
+b23$="owch i don't think i have enough wood..."
+b24$="come back in a month...i need a few paychecks..."
+b25$="passletter=P write it down or go down deep..."
+return
+concentrate28:
+b1$="I go to school!"
+b2$="and theres a no bullying policy..."
+b3$="hahahaha!"
+b4$="goes my smile!"
+b5$="hahahaha!"
+b6$="yiipii!"
+b7$="oups there goes the tire swing!"
+b8$="anyway i need a paintball gun..."
+b9$="know why..."
+b10$="because someones being a bully in my school..."
+b11$="and i need to urge the no bullying policy on!!!"
+b12$="cause its a marathon of war!!!"
+b13$="im climbing the trees carrying out the policy!!"
+b14$="but guess what!"
+b15$="there are many bullyes bigger than me!!!"
+b16$="and so the staff will care because im making it right!"
+b17$="the teachers terrorize children..."
+b18$="give away homework..."
+b19$="but one small thing urges me on!"
+b21$="it's my shirt that says!"
+b22$="(homework kills trees)!"
+b23$="i battle whith purpose!"
+b24$="yeeheehee!"
+b25$="and the passletter=i otherwise known as O.M.G."
+return
+concentrate29:
+b1$="i d'ont know why im so sticky..."
+b2$="i mean im just hungry..."
+b3$="and starving..."
+b4$="but heres a joke..."
+b5$="what's brown and sticky!"
+b6$="a stick!"
+b7$="heres another!"
+b8$="why couldn't the skeleton cross the road!"
+b9$="cause he never had the {guts} to do it"
+b10$="hahahha!"
+b11$="oups one too many h's..."
+b12$="im a stick man!"
+b13$="im silver and sticky!"
+b14$="im small and sticky!"
+b15$="i represent the sticks in this world!"
+b16$="im athletic as long as you do not break my bones!"
+b17$="i mean sticks not bones sorry..."
+b18$="omg im awesome!"
+b19$="feel the wrath of the brocoli to come!!!"
+b21$="yayaya!"
+b22$="the vegetables are here!"
+b23$="i better go get the door!"
+b24$="ouch your green!"
+b25$="and my autograph is...passletter=a"
+return
+concentrate30:
+b1$="Im green but not moldy!!!!"
+b2$="but seriously..."
+b3$="TV!"
+b4$="why does brocoli have to be bad..."
+b5$="i mean like carrots are way meaner..."
+b6$="okay im grown in gardens so my population is high..."
+b7$="but something seems to be diminishing it..."
+b8$="i wonder why..."
+b9$="hey can you check your fridge..."
+b10$="i got a joke it's nown as..."
+b11$="Brave"
+b12$="Ruthless"
+b13$="Owesome"
+b14$="Contagious"
+b15$="Over powering"
+b16$="Loved"
+b17$="Invincible"
+b18$="ya you heard me..."
+b19$="im owesome!"
+b21$="that spells B.R.O.C.O.L.I."
+b22$="im a big fat tree!"
+b23$="so stop all the homework..."
+b24$="your killing me"
+b25$="passletter=n"
+return
+concentrate31:
+b1$="you know what i am!"
+b2$="im hot im great im a!"
+b3$="Violent"
+b4$="Off"
+b5$="Lava"
+b6$="Creepy"
+b7$="Awesome"
+b8$="Nobody"
+b9$="Oblivious"
+b10$="!!!!"
+b11$="get used to it..."
+b12$="im *HOT*"
+b13$="yeah!"
+b14$="youve also noticed the sun..."
+b15$="don't do that..."
+b16$="because this is my time to shine..."
+b17$="and my spotlight..."
+b18$="so be oblivious to him..."
+b19$="turn your backs in his direction..."
+b21$="yeah thats right..."
+b22$="did i SPAZZ!"
+b23$="totally..."
+b24$="sorry Mr.sun"
+b25$="apology accepted! passletter=o"
+return
+bb1:
+ms=27
+cls
+print "press escape to return to mainmenu"
+sprite 3,230,50,1
+show sprite 3
+do
+`Start of weapon switcher
+if blazez=3 then sprite 2,mousex(),mousey(),29
+if blazez=2 then sprite 2,mousex(),mousey(),30
+wait 10
+if blazez=1 then sprite 2,mousex(),mousey(),2
+if mouseclick()=1 then gosub concentrate1
+if blazez=4 then blazez=blazez-3
+if blazez=0 then blazez=blazez+1
+wait 10
+if upkey()=1 then blazez=blazez+1
+wait 10
+if downkey()=1 then blazez=blazez-1
+if escapekey()=1
+hide sprite 2
+hide sprite 3
+cls
+goto special
+endif
+`end of weapon switcher
+loop
+bb2:
+ms=28
+cls
+print "press escape to return to mainmenu"
+sprite 3,230,50,35
+show sprite 3
+do
+`Start of weapon switcher
+if blazez=3 then sprite 2,mousex(),mousey(),29
+if blazez=2 then sprite 2,mousex(),mousey(),30
+wait 10
+if blazez=1 then sprite 2,mousex(),mousey(),2
+if mouseclick()=1 then gosub concentrate1
+if blazez=4 then blazez=blazez-3
+if blazez=0 then blazez=blazez+1
+wait 10
+if upkey()=1 then blazez=blazez+1
+wait 10
+if downkey()=1 then blazez=blazez-1
+if escapekey()=1
+hide sprite 2
+hide sprite 3
+cls
+goto special
+endif
+`end of weapon switcher
+loop
+bb3:
+ms=29
+cls
+print "press escape to return to mainmenu"
+sprite 3,230,50,36
+show sprite 3
+do
+`Start of weapon switcher
+if blazez=3 then sprite 2,mousex(),mousey(),29
+if blazez=2 then sprite 2,mousex(),mousey(),30
+wait 10
+if blazez=1 then sprite 2,mousex(),mousey(),2
+if mouseclick()=1 then gosub concentrate1
+if blazez=4 then blazez=blazez-3
+if blazez=0 then blazez=blazez+1
+wait 10
+if upkey()=1 then blazez=blazez+1
+wait 10
+if downkey()=1 then blazez=blazez-1
+if escapekey()=1
+hide sprite 2
+hide sprite 3
+cls
+goto special
+endif
+`end of weapon switcher
+loop
+bb4:
+ms=30
+cls
+print "press escape to return to mainmenu"
+sprite 3,230,50,37
+show sprite 3
+do
+`Start of weapon switcher
+if blazez=3 then sprite 2,mousex(),mousey(),29
+if blazez=2 then sprite 2,mousex(),mousey(),30
+wait 10
+if blazez=1 then sprite 2,mousex(),mousey(),2
+if mouseclick()=1 then gosub concentrate1
+if blazez=4 then blazez=blazez-3
+if blazez=0 then blazez=blazez+1
+wait 10
+if upkey()=1 then blazez=blazez+1
+wait 10
+if downkey()=1 then blazez=blazez-1
+if escapekey()=1
+hide sprite 2
+hide sprite 3
+cls
+goto special
+endif
+`end of weapon switcher
+loop
+bb5:
+ms=31
+cls
+print "press escape to return to mainmenu"
+sprite 3,230,50,38
+show sprite 3
+do
+`Start of weapon switcher
+if blazez=3 then sprite 2,mousex(),mousey(),29
+if blazez=2 then sprite 2,mousex(),mousey(),30
+wait 10
+if blazez=1 then sprite 2,mousex(),mousey(),2
+if mouseclick()=1 then gosub concentrate1
+if blazez=4 then blazez=blazez-3
+if blazez=0 then blazez=blazez+1
+wait 10
+if upkey()=1 then blazez=blazez+1
+wait 10
+if downkey()=1 then blazez=blazez-1
+if escapekey()=1
+hide sprite 2
+hide sprite 3
+cls
+goto special
+endif
+`end of weapon switcher
+loop
+ming1:
+
+ming2:
+
+ming3:
+
+LEVEL:
+`make level editor
+wait 10
+disable escapekey
+hide mouse
+load bitmap "well.bmp"
+wait key
+0158:
+hide all sprites
+cls
+load image "customb.bmp",100
+load image "customw.bmp",200
+load image "customwe.bmp",300
+set text size 70
+reclo$="Welcome to the"
+reclo2$="level editor!"
+text 0,0,reclo$
+text 0,70,reclo2$
+set cursor 0,200
+print "1-Test"
+print "2-Weapon"
+print "3-Weapon Effect"
+print "4-Make Button"
+print "5-Button Speech"
+print "6-Help"
+print "7-Exit"
+do
+if keystate(2)=1 then goto yummy1
+if keystate(3)=1 then goto yummy2
+if keystate(4)=1 then goto yummy3
+if keystate(5)=1 then goto yummy4
+if keystate(6)=1 then goto yummy5
+if keystate(7)=1 then goto yummy6
+if keystate(8)=1 then goto yummy7
+loop
+yummy1:
+`MAKE TESTING
+cls
+print "PRESS ESCAPE TO EXIT TESTER"
+sprite 100,240,150,100
+do
+if mouseclick()=1 then gosub gdrr
+sprite 200,mousex(),mousey(),200
+if escapekey()=1 then goto 654
+loop
+yummy2:
+directory$=""
+filename$="customw.bmp"
+commandline$=filename$
+execute file "C:\Program Files\Accessories\mspaint.EXE",commandline$,directory$,1
+load image "customw.bmp",200
+goto 0158
+yummy3:
+directory$=""
+filename$="customwe.bmp"
+commandline$=filename$
+execute file "C:\Program Files\Accessories\mspaint.EXE",commandline$,directory$,1
+load image "customwe.bmp",300
+goto 0158
+yummy4:
+directory$=""
+filename$="customb.bmp"
+commandline$=filename$
+execute file "C:\Program Files\Accessories\mspaint.EXE",commandline$,directory$,1
+load image "customb.bmp",100
+goto 0158
+yummy5:
+cls
+Print "TYPE 25 LINES"
+print "PRESS 1 TO CONTINUE"
+print "PRESS 2 TO RETURN"
+do
+if keystate(2)=1 then goto 458
+if keystate(3)=1 then goto 0158
+loop
+458:
+input lime1$
+input lime2$
+input lime3$
+input lime4$
+input lime5$
+input lime6$
+input lime7$
+input lime8$
+input lime9$
+input lime10$
+input lime11$
+input lime12$
+input lime13$
+input lime14$
+input lime15$
+input lime16$
+input lime17$
+input lime18$
+input lime19$
+input lime20$
+input lime21$
+input lime22$
+input lime23$
+input lime24$
+input lime25$
+lime26$="PASSLETTER=H"
+print "YOU HAVE ONE MORE LINE TO GO"
+input lime$
+print "PRESS ANY KEY TO RETURN TO MAINMENU"
+goto 0158
+yummy6:
+directory$=""
+filename$="GHJK.txt"
+commandline$=filename$
+execute file "C:\windows\NOTEPAD.EXE",commandline$,directory$,1
+goto 0158
+yummy7:
+goto special
+gdrr:
+`SPEECH GENERATOR
+sprite 200,mousex(),mousey(),300
+cls
+werty=werty+1
+if werty=1 then center text 320,350,lime1$
+if werty=2 then center text 320,350,lime2$
+if werty=3 then center text 320,350,lime3$
+if werty=4 then center text 320,350,lime4$
+if werty=5 then center text 320,350,lime5$
+if werty=6 then center text 320,350,lime6$
+if werty=7 then center text 320,350,lime7$
+if werty=8 then center text 320,350,lime8$
+if werty=9 then center text 320,350,lime9$
+if werty=10 then center text 320,350,lime10$
+if werty=11 then center text 320,350,lime11$
+if werty=12 then center text 320,350,lime12$
+if werty=13 then center text 320,350,lime13$
+if werty=14 then center text 320,350,lime14$
+if werty=15 then center text 320,350,lime15$
+if werty=16 then center text 320,350,lime16$
+if werty=17 then center text 320,350,lime17$
+if werty=18 then center text 320,350,lime18$
+if werty=19 then center text 320,350,lime19$
+if werty=20 then center text 320,350,lime20$
+if werty=21 then center text 320,350,lime21$
+if werty=22 then center text 320,350,lime22$
+if werty=23 then center text 320,350,lime23$
+if werty=24 then center text 320,350,lime24$
+if werty=25 then center text 320,350,lime25$
+if werty=26 then center text 320,350,lime26$
+return
+654:
+delete sprite 100
+delete sprite 200
+goto 0158
+pictures:
+cls
+print "AGAIN YOU FAIL TO REALISE THAT THE MINIGAMES DO NOT EXIST..."
+wait key
+goto special
+JOKE:
+cls
+print "Welcome to the Joke Book!"
+print "Or press escape to exit at any time!"
+print "Press 1 2 or 3 4 to get that type of joke!"
+print "Press space to clear the screen!"
+do
+wait 10
+if keystate(2)=1 then leebamber
+if keystate(3)=1 then malcolmbamber
+if keystate(4)=1 then christopherbamber
+if spacekey()=1 then cls
+if keystate(5)=1 then print "YOUR MOM"
+if escapekey()=1 then goto special
+alias=alias+1
+if alias=100 then print "PASSLETTER=i"
+loop
+`Type_this_word_at_the_help_

@@ -1,0 +1,15 @@
+Canon Defender Help file:
+
+At the start of the game it will brief you. Read all this. Press any key to see page to of the briefing. At the end of the briefing you will have the choice to exit, see the help and to start the game. Choosing to see the help will result in this notepad file appearing and if you close this notepad file you will be jumped back to the game. DO NOT USE THE ENDTASK MESSENGER!
+
+GAMEPLAY:
+
+	If you choose to play then the backround will change to a castle's tower and the mouse will appear as a aimer. Quickly shoot all the canon shots trying to hit you by clicking the left mouse button, but be warned it will take around 5 seconds to reload your canon and you can not aim while reloading therefore you become vulnerable to attack. You will know how close a shot will be to hitting your tower by the size of the shot. Shots will enlarge 5 times and then hit you. It will take one second for the shot to enlarge a size and if the shot hits your tower you will lose a life. You have ten lives and each one is represented by a mini canon that is shown at the top of the screen. If you lose a life the next lives image will disappear and you only lose if you lose all your lives the game will start again from the briefing start. You will not restart if you lose a life. After you win you will get a special code that you can use to get bonus content from the game called A Special Mission.(Read more about how to use the code in A Special Mission in the help file for A Special Mission if you own it.) You will also be congratulated.
+
+CONTROLS:
+The controls are always what the game says that the button does for the most.But these are the other buttons doings...
+
+LEFT MOUSE BUTTON = ATTACK
+
+REQUIREMENTS:
+Do not follow this if you bought this game with A Special Mission because A Special Mission includes the requirements for this game in A Special Missions README/HELP FILE.

@@ -1,0 +1,147 @@
+`make level editor
+disable escapekey
+hide mouse
+ink rgb(100,200,100),rgb(50,100,100)
+load bitmap "well.bmp"
+wait key
+0158:
+hide all sprites
+cls
+load image "customb.bmp",100
+load image "customw.bmp",200
+load image "customwe.bmp",300
+set text size 70
+reclo$="Welcome to the"
+reclo2$="level editor!"
+text 0,0,reclo$
+text 0,70,reclo2$
+set cursor 0,200
+print "1-Test"
+print "2-Weapon"
+print "3-Weapon Effect"
+print "4-Make Button"
+print "5-Button Speech"
+print "6-Help"
+print "7-Exit"
+do
+if keystate(2)=1 then goto yummy1
+if keystate(3)=1 then goto yummy2
+if keystate(4)=1 then goto yummy3
+if keystate(5)=1 then goto yummy4
+if keystate(6)=1 then goto yummy5
+if keystate(7)=1 then goto yummy6
+if keystate(8)=1 then goto yummy7
+loop
+yummy1:
+`MAKE TESTING
+cls
+print "PRESS ESCAPE TO EXIT TESTER"
+sprite 100,240,150,100
+do
+if mouseclick()=1 then gosub gdrr
+sprite 200,mousex(),mousey(),200
+if escapekey()=1 then goto 654
+loop
+yummy2:
+directory$=""
+filename$="customw.bmp"
+commandline$=filename$
+execute file "C:\Program Files\Accessories\mspaint.EXE",commandline$,directory$,1
+load image "customw.bmp",200
+goto 0158
+yummy3:
+directory$=""
+filename$="customwe.bmp"
+commandline$=filename$
+execute file "C:\Program Files\Accessories\mspaint.EXE",commandline$,directory$,1
+load image "customwe.bmp",300
+goto 0158
+yummy4:
+directory$=""
+filename$="customb.bmp"
+commandline$=filename$
+execute file "C:\Program Files\Accessories\mspaint.EXE",commandline$,directory$,1
+load image "customb.bmp",100
+goto 0158
+yummy5:
+cls
+Print "TYPE 25 LINES"
+print "PRESS 1 TO CONTINUE"
+print "PRESS 2 TO RETURN"
+do
+if keystate(2)=1 then goto 458
+if keystate(3)=1 then goto 0158
+loop
+458:
+input lime1$
+input lime2$
+input lime3$
+input lime4$
+input lime5$
+input lime6$
+input lime7$
+input lime8$
+input lime9$
+input lime10$
+input lime11$
+input lime12$
+input lime13$
+input lime14$
+input lime15$
+input lime16$
+input lime17$
+input lime18$
+input lime19$
+input lime20$
+input lime21$
+input lime22$
+input lime23$
+input lime24$
+input lime25$
+print "YOU HAVE ONE MORE LINE TO GO"
+input lime$
+print "PRESS ANY KEY TO RETURN TO MAINMENU"
+goto 0158
+yummy6:
+directory$=""
+filename$="GHJK.txt"
+commandline$=filename$
+execute file "C:\windows\NOTEPAD.EXE",commandline$,directory$,1
+goto 0158
+yummy7:
+end
+gdrr:
+`SPEECH GENERATOR
+sprite 200,mousex(),mousey(),300
+cls
+werty=werty+1
+if werty=1 then center text 320,350,lime1$
+if werty=2 then center text 320,350,lime2$
+if werty=3 then center text 320,350,lime3$
+if werty=4 then center text 320,350,lime4$
+if werty=5 then center text 320,350,lime5$
+if werty=6 then center text 320,350,lime6$
+if werty=7 then center text 320,350,lime7$
+if werty=8 then center text 320,350,lime8$
+if werty=9 then center text 320,350,lime9$
+if werty=10 then center text 320,350,lime10$
+if werty=11 then center text 320,350,lime11$
+if werty=12 then center text 320,350,lime12$
+if werty=13 then center text 320,350,lime13$
+if werty=14 then center text 320,350,lime14$
+if werty=15 then center text 320,350,lime15$
+if werty=16 then center text 320,350,lime16$
+if werty=17 then center text 320,350,lime17$
+if werty=18 then center text 320,350,lime18$
+if werty=19 then center text 320,350,lime19$
+if werty=20 then center text 320,350,lime20$
+if werty=21 then center text 320,350,lime21$
+if werty=22 then center text 320,350,lime22$
+if werty=23 then center text 320,350,lime23$
+if werty=24 then center text 320,350,lime24$
+if werty=25 then center text 320,350,lime25$
+return
+654:
+delete sprite 100
+delete sprite 200
+goto 0158

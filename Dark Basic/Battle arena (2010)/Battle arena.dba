@@ -1,0 +1,53 @@
+`Make route label to the start of the program
+start:
+`make some variables
+q1$ = "Battle arena"
+q2$ = "2-HELP"
+q3$ = "1-PLAY"
+`Make menu
+ink rgb(100,100,100),rgb
+Set text size 40
+center text 330,100,q1$
+center text 330,200,q3$
+center text 330,300,q2$
+goto keyboard
+`Make help screen
+help:
+cls
+print "Battle Arena is a 3d war game. On battle arena there are two game choices."
+print "Story and Arena.Story is when you explore large landscapes and go"
+print "on an epic quest that involves action packed battles!And Arena is"
+print "when you battle against unlimited enemies and try get the best score"
+print "possible before you are overwhelmed and lose!"
+print ""
+print "STORY:"
+print "In the Story you battle as a thief to survive and find new lands and do"
+print "much more!"
+print ""
+print "ARENA:"
+print "In Arena you battle and battle for survival and try to beat highscores!"
+print ""
+print "You know what the game is but how do you fight or activate things?"
+print "Well right here I will show you what buttons do what."
+print ""
+print "ATTACK - CONTROL"
+print "BLOCK - SHIFT"
+print "ACTIVATE - SPACE"
+print ""
+print "Battle Arena was created by Nicholas Wengel in 2010"
+print ""
+print "PRESS ANY KEY TO PLAY"
+wait key
+`Make gameplay
+gameplay:
+cls
+print "SORRY THIS IS NOT YET COMPLETE"
+print "PRESS ANY KEY"
+wait key
+goto start
+`Program keyboard
+keyboard:
+do
+if keystate(3)=1 then goto help
+if keystate(2)=1 then goto gameplay
+loop

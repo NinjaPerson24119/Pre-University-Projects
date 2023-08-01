@@ -1,0 +1,42 @@
+LOAD BITMAP "inx0.bmp"
+do
+if downkey()=1 then goto exe
+if upkey()=1 then goto inst
+loop
+inst:
+LOAD BITMAP "inx1.bmp"
+do
+if returnkey()=1 then goto installer 
+wait 10
+if downkey()=1 then goto REED
+if upkey()=1 then goto exe
+loop
+REED:
+load bitmap "inx2.bmp"
+do
+if returnkey()=1
+directory$=""
+filename$="readme.txt"
+commandline$=filename$
+execute file "C:\Windows\NOTEPAD.EXE",commandline$,directory$,1
+endif
+wait 10
+if downkey()=1 then goto exe
+if upkey()=1 then goto inst
+loop
+exe:
+load bitmap "inx3.bmp"
+do
+if returnkey()=1 then end
+wait 10
+if downkey()=1 then goto inst
+if upkey()=1 then goto REED
+loop
+installer:
+load bitmap "instaling.bmp"
+sourcefile$="E:\Nic's stuff\Darkbasic program\MYPROJ\A special mission"
+destfile$="C:\Program Files"
+copy file sourcefile$,destfile$
+load bitmap "com.bmp"
+wait key
+end

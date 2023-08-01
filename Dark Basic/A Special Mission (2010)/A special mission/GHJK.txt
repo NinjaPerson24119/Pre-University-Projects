@@ -1,0 +1,31 @@
+A Special Mission Level Maker:
+
+This level maker is very easy to use!
+Just read the different sections bellow and you will be started in no time at all!
+
+Starting:
+At the start of this level maker it will welcome you then when you press a button the main menu will come up.
+Press the number that is before the word saying a part of making the level and you will jump some place to do that part.
+
+Testing your level:
+You can test your level by pressing one at the main menu but remember that you have to make a weapon and a weapon effect and a button for those to appear, other wise the default weapon and stuff will appear. You must enter text in order for text to appear. While testing your level you may press escape at any time to return to the main menu.
+
+Weapons:
+You can make a weapon by pressing two at the main menu. When you start making your weapon you will notice mspaint has appeared and there is a smile up, press control+shift+n to clear the image then draw your own image and save it and exit mspaint. Remember that this picture will serve as the mouse on your level and also remember that everything will appear that is in that picture exept black. (black does not appear)
+Feel free to enlarge the width and height of the picture to make your weapon fit.
+
+Weapon Effects:
+You may make a Weapon effect by pressing 3 at the main menu. Weapon effects are made just about the same as the weapons. Weapon effects are probably the hardest to make due to the animation. Weapon effects are what your weapon will appear as each time you click (attack). To make a weapon effect you must get a picture of what your weapon would look like if someone hit something with it. To make it cooler you could put a yellow pointy zigzagy circle around it. Also remember to make sure the weapon effect is also the right view of your weapon.
+
+Buttons:
+To make a button simply press 4 at the main menu then draw a random object out of your imagination after clearing the image by pressing control+shift+n. This will be the object that you must hit for the next line of button speech to come up.
+
+Button Speech:
+You can make button speech by pressing 5 at the main menu. When you select button speech you will be sent to a blank page that says Type 25 lines. Type 25 lines of what the button will say when he's hit by your weapon. Each line will come up by its self underneath the button in your level. You will not see the last line when the next comes up.
+Button speech does not save like everything else. Sorry but each time you exit the level maker your speech will be lost...
+but the images will be saved for you. The button speech will be overwrited and lost also if you choose Make button speech a second time.
+
+Exiting:
+To exit simply press 7 at the main menu.
+
+Good luck!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 

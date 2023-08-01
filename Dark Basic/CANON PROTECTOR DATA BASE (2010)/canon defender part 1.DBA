@@ -1,0 +1,230 @@
+rem <Made by Nicholas Wengel
+rem <Made in 2010
+rem <The program name is Canon defender
+
+disable escapekey
+brief:
+hide all sprites
+cls
+hide mouse
+flush video memory
+`LOAD IMAGES
+load image "a1.bmp",1
+load image "a2.bmp",2
+load image "a4.bmp",3
+load image "a5.bmp",4
+load image "a5,4.bmp",8
+load image "a5,3.bmp",7
+load image "a5,2.bmp",6
+load image "a5,1.bmp",5
+load image "blow.bmp",9
+load image "blowup.bmp",10
+rem load and loop backround music
+load music "canon defender gameplay music.wav",2
+load music "canon defender menu+briefing music.wav",1
+load music "BANG!.wav",3
+stop music 2
+play music 1
+loop music 1
+rem set text and backround colors
+ink rgb(0,255,0),rgb(0,0,0)
+rem start briefing for level 1
+Print "In the game there is only:"
+print "100000 soldiers"
+print "lot's of bullets"
+print "200 airplanes"
+print "50 engineers"
+print "500 tanks"
+Print "30 boats"
+print "300 landmines"
+print "And this is what is happening..."
+print "Well unfortunately the enemies have evrything we have..."
+print "And they are doing better than us..."
+print "Your job is to defend our fortress for as long as possible."
+print "OHH! And we have something they don't have..."
+print "CANONS!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+print "Ohh well we only have 10 canons..."
+print "Well good enough...I guess..."
+print "Well anyway...your job is to use the 10 canons to protect"
+print "the fortress and we only have 10 canons, thats all."
+print "After that we will move on to different things such as"
+print "flying,tanks,boats,etc..."
+print "Well I better give you a heads up on whats going on."
+print "The enemy is planing an atack...evrywhere so...do evrything"
+print "you can to ensure we WIN the battle..."
+pRiNt "Well I'll give you the battle status and then you can get to work!"
+Print "STATUS:"
+print "9800 airplanes remaining"
+print "90000 soldiers remaining"
+print "9950 engineers remaining"
+print "PRESS ANY KEY WHEN DONE READING"
+rem wait for a to be pressed then clear the screen
+wait key
+CLS
+rem continue briefing
+print "9500 tanks remaining"
+Print "9970 boats remaining"
+print "300 landmines remaining"
+print "Well thats the status!"
+print "GOOD LUCK!"
+print "PRESS S TO PLAY"
+print "PRESS SHIFT FOR HELP"
+print "PRESS ESCAPE TO EXIT"
+print "YOU CAN ALSO EXIT IN GAMEPLAY BY PRESSING ESCAPE"
+rem wait for a button to be pressed then end briefing and go to level 1
+do
+if keystate(31)=1 then goto flubby
+if keystate(54)=1 then gosub fileweb 
+if escapekey()=1 then end
+loop
+flubby:
+cls
+`Load backround for level 1
+load bitmap "a3.bmp"
+`load variables
+life=4
+area=2
+`Position sprites
+sprite 1,mousex(),mousey(),1
+sprite 2,30,0,2
+sprite 3,60,0,2
+sprite 4,90,0,2
+sprite 8,120,0,2
+sprite 9,150,0,2
+sprite 10,180,0,2
+sprite 11,210,0,2
+sprite 12,240,0,2
+sprite 13,270,0,2
+sprite 14,300,0,2
+sprite 5,120,0,2
+stop music 1
+loop music 2
+`Make -gameplay-
+do
+if bmx=30 then goto wowthere
+if escapekey()=1 then end
+sprite 1,mousex(),mousey(),1
+if target1=30 then life=life-1
+if life=1 then delete sprite 2
+if life=2 then delete sprite 3
+if life=3 then delete sprite 4
+if life=4 then delete sprite 5
+if life=5 then delete sprite 6
+if life=6 then delete sprite 7
+if life=7 then delete sprite 8
+if life=8 then delete sprite 9
+if life=9 then delete sprite 10
+if life=10 then delete sprite 11
+if life=0 then goto gameover
+stop music 3
+if mouseclick()=1 then gosub shot
+bamgx=mousex()+55
+bamgy=mousey()+45
+area=area+1
+sprite 6,60,250,4
+sprite 15,250,250,4
+sprite 16,420,250,4
+gosub blades1
+gosub blades2
+gosub blades3
+loop
+gameover:
+goto brief
+shot:
+play music 3
+sprite 7,bamgx,bamgy,3
+show sprite 6
+if sprite hit(1,6)=1 then goto horn1
+if sprite hit(1,15)=1 then goto horn2
+if sprite hit(1,16)=1 then goto horn3
+wait 900
+wait 2200
+sprite 7,bamgx,bamgy,10
+wait 400
+stop music 3
+delete sprite 7
+return
+horn1:
+play music 3
+sprite 6,60,250,9
+wait 2800
+wait 300
+sprite 7,bamgx,bamgy,10
+wait 100
+delete sprite 7
+delete sprite 6
+bmx=bmx+1
+return
+horn2:
+sprite 15,250,250,9
+wait 3100
+play music 3
+sprite 7,bamgx,bamgy,10
+wait 100
+delete sprite 7
+delete sprite 15
+bmx=bmx+1
+return
+horn3:
+play music 3
+sprite 16,420,250,9
+wait 3000
+wait 100
+sprite 7,bamgx,bamgy,10
+wait 100
+delete sprite 7
+delete sprite 16
+bmx=bmx+1
+return
+`sprite 6,60,250,4
+`sprite 15,250,250,4
+`sprite 16,420,250,4
+BLADES1:
+`6
+count1=count1+1
+if count1=60000 then sprite 6,60,250,5
+if count1=120000 then sprite 6,60,250,6
+if count1=200000 then sprite 6,60,250,7
+if count1=260000 then sprite 6,60,250,8
+if count1=340000 then sprite 6,60,250,4
+if count1=400000 then life=life-1
+if count1=450000 then count1=0
+return
+return
+BLADES2:
+`15
+count2=count2+1
+if count2=70000 then sprite 15,60,250,5
+if count2=140000 then sprite 15,250,250,6
+if count2=180000 then sprite 15,250,250,7
+if count2=300000 then sprite 15,250,250,8
+if count2=350000 then sprite 15,250,250,4
+if count2=430000 then life=life-1
+if count2=450000 then count1=0
+return
+BLADES3:
+`16
+count3=count3+1
+if count3=90000 then sprite 6,60,250,5
+if count3=100000 then sprite 6,60,250,6
+if count3=160000 then sprite 6,60,250,7
+if count3=260000 then sprite 6,60,250,8
+if count3=330000 then sprite 6,60,250,4
+if count3=390000 then life=life-1
+if count3=450000 then count1=0
+return
+`CREATE WIN WAY
+WOWTHERE:
+load bitmap "@@@.bmp"
+stop music 2
+stop music 3
+play music 1
+wait key
+end
+`MAKE HELP
+fileweb:
+filename$="help1.txt"
+directory$=""
+commandline$=filename$
+execute file "C:\Windows\NOTEPAD.EXE",commandline$,directory$
+return
