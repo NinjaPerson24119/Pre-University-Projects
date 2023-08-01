@@ -1,0 +1,5 @@
+﻿  Snake.cpp
+  Generating code
+c:\users\spruce valley farms\documents\visual studio 2010\projects\snake\snake\keyboard.h(30): warning C4715: 'keystate' : not all control paths return a value
+  Finished generating code
+  Snake.vcxproj -> C:\Users\Spruce Valley Farms\Documents\Visual Studio 2010\Projects\Snake\Release\Snake.exe

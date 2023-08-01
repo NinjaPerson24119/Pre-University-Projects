@@ -1,0 +1,6 @@
+﻿  main.cpp
+c:\users\spruce valley farms\documents\visual studio 2010\projects\life force\life force\csoldier.h(113): warning C4244: 'argument' : conversion from 'GLuint' to 'float', possible loss of data
+c:\users\spruce valley farms\documents\visual studio 2010\projects\life force\life force\csoldier.h(113): warning C4244: 'argument' : conversion from 'GLuint' to 'float', possible loss of data
+c:\users\spruce valley farms\documents\visual studio 2010\projects\life force\life force\csoldier.h(115): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+c:\users\spruce valley farms\documents\visual studio 2010\projects\life force\life force\csoldier.h(115): warning C4244: 'argument' : conversion from 'GLuint' to 'float', possible loss of data
+  Life force.vcxproj -> C:\Users\Spruce Valley Farms\Documents\Visual Studio 2010\Projects\Life force\Debug\Life force.exe

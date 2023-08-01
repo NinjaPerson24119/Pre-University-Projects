@@ -1,0 +1,4 @@
+﻿  main.cpp
+c:\users\spruce valley farms\documents\visual studio 2010\projects\void\void\main.cpp(32): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+c:\users\spruce valley farms\documents\visual studio 2010\projects\void\void\main.cpp(35): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+  Void.vcxproj -> C:\Users\Spruce Valley Farms\Documents\Visual Studio 2010\Projects\Void\Debug\Void.exe

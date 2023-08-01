@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Resource Files\CUSTOMLIB">
+      <UniqueIdentifier>{d9c3cb46-b23a-4a4c-9c08-fb25ebf56e7e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\CUSTOMLIB\Physics">
+      <UniqueIdentifier>{8155db96-fcfe-4be7-8fe7-9fcb83342a8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\CUSTOMLIB\Base">
+      <UniqueIdentifier>{46cd10f6-70db-47bb-b8c3-c11b13214631}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\CUSTOMLIB\Drawing">
+      <UniqueIdentifier>{5941e5da-d42c-4fd5-ae72-8ca78b6f3232}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\CUSTOMLIB\Input">
+      <UniqueIdentifier>{f423771d-b437-4687-92a0-5d823d0f8782}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGL.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CUSTOMLIB\Physics\Colissions.h">
+      <Filter>Resource Files\CUSTOMLIB\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="CUSTOMLIB\Physics\cStaticObject.h">
+      <Filter>Resource Files\CUSTOMLIB\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="CUSTOMLIB\Physics\cVector.h">
+      <Filter>Resource Files\CUSTOMLIB\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="CUSTOMLIB\Physics\Physics.h">
+      <Filter>Resource Files\CUSTOMLIB\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="CUSTOMLIB\Base\Base.h">
+      <Filter>Resource Files\CUSTOMLIB\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="CUSTOMLIB\Base\cColor.h">
+      <Filter>Resource Files\CUSTOMLIB\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="CUSTOMLIB\Base\cPoint.h">
+      <Filter>Resource Files\CUSTOMLIB\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="CUSTOMLIB\Base\cRectangle.h">
+      <Filter>Resource Files\CUSTOMLIB\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="CUSTOMLIB\Base\Extras.h">
+      <Filter>Resource Files\CUSTOMLIB\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="CUSTOMLIB\Drawing\cAnimation.h">
+      <Filter>Resource Files\CUSTOMLIB\Drawing</Filter>
+    </ClInclude>
+    <ClInclude Include="CUSTOMLIB\Drawing\cTexture.h">
+      <Filter>Resource Files\CUSTOMLIB\Drawing</Filter>
+    </ClInclude>
+    <ClInclude Include="CUSTOMLIB\Drawing\Drawing.h">
+      <Filter>Resource Files\CUSTOMLIB\Drawing</Filter>
+    </ClInclude>
+    <ClInclude Include="CUSTOMLIB\Drawing\Primitives.h">
+      <Filter>Resource Files\CUSTOMLIB\Drawing</Filter>
+    </ClInclude>
+    <ClInclude Include="CUSTOMLIB\Input\cKeyboard.h">
+      <Filter>Resource Files\CUSTOMLIB\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="CUSTOMLIB\Input\cMouse.h">
+      <Filter>Resource Files\CUSTOMLIB\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="CUSTOMLIB\Input\Input.h">
+      <Filter>Resource Files\CUSTOMLIB\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="CUSTOMLIB\Input\cMap.h">
+      <Filter>Resource Files\CUSTOMLIB\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="CUSTOMLIB\Base\cMatrix.h">
+      <Filter>Resource Files\CUSTOMLIB\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="cGame.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cSoldier.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CUSTOMLIB\Base\cTriangle.h">
+      <Filter>Resource Files\CUSTOMLIB\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="CUSTOMLIB\Base\cAngle.h">
+      <Filter>Resource Files\CUSTOMLIB\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="CUSTOMLIB\Base\cLine.h">
+      <Filter>Resource Files\CUSTOMLIB\Base</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

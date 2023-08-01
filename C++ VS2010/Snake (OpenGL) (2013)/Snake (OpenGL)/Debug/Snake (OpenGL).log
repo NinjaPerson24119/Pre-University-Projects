@@ -1,0 +1,6 @@
+﻿  main.cpp
+c:\users\spruce valley farms\documents\visual studio 2010\projects\snake (opengl)\snake (opengl)\csnake.h(65): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+c:\users\spruce valley farms\documents\visual studio 2010\projects\snake (opengl)\snake (opengl)\csnake.h(148): warning C4244: '=' : conversion from 'const int' to 'float', possible loss of data
+c:\users\spruce valley farms\documents\visual studio 2010\projects\snake (opengl)\snake (opengl)\csnake.h(149): warning C4244: '=' : conversion from 'const int' to 'float', possible loss of data
+c:\users\spruce valley farms\documents\visual studio 2010\projects\snake (opengl)\snake (opengl)\main.cpp(13): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+  Snake (OpenGL).vcxproj -> C:\Users\Spruce Valley Farms\Documents\Visual Studio 2010\Projects\Snake (OpenGL)\Debug\Snake (OpenGL).exe

@@ -1,0 +1,4 @@
+﻿  main.cpp
+c:\users\spruce valley farms\documents\visual studio 2010\projects\pong\pong\cgame.h(290): warning C4244: 'argument' : conversion from 'const int' to 'float', possible loss of data
+c:\users\spruce valley farms\documents\visual studio 2010\projects\pong\pong\cgame.h(290): warning C4244: 'argument' : conversion from 'const int' to 'float', possible loss of data
+  Pong.vcxproj -> C:\Users\Spruce Valley Farms\Documents\Visual Studio 2010\Projects\Pong\Debug\Pong.exe

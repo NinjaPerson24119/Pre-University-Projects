@@ -1,0 +1,22 @@
+Characters
+1.Use Character editor to make .chrt files
+2.Use 2D Matrix editor to make a character map.
+3.Load .chrt files into Character packager.
+4.Assign animations to characters within Character packager.
+5.Generate .chrtset file from loaded data and character map.
+
+Tile set
+1.Use Tile editor to make .tile files
+2.Load .tile files into Tile packager.
+3.Assign textures to tiles from within Tile packager.
+4.Generate .tileset file from loaded data.
+
+**WARNING** The set generators will not make new folders.
+
+**WARNING** Textures and animations must be in the set directory BEFORE
+generating a set. The generators will not move texture and animation
+files.
+
+**WARNING** Editing anything inside of the package folder may render the
+package unusable. This does not mean that you can't move the package
+though.
